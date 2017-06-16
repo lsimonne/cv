@@ -91,8 +91,8 @@ $(document).ready(function(){
     Only enabled if the document has a long scroll bar
     Note the window height + offset
 */
-if (($(window).height() + 100) < $(document).height()) {
+if (($(window).height() + 300) < $(document).height()) {
     $('#top_link').removeClass('hidden').affix({
-        offset: {top:100}
+        offset: {top:300}
     });
 }

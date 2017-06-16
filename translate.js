@@ -13,6 +13,8 @@ var pdf_resume = {
 }
 
 var dictEn = {
+	// permis B
+		email_me: "EMAIL ME",
 		pdf: "  PDF version",
 		skills_nav: "Skills",
 		ed_nav: "Education",
@@ -62,7 +64,9 @@ var dictEn = {
 };
 
 	var dictFr = {
-		pdf: "  version PDF",
+		// permis B
+		email_me: "ME CONTACTER",
+		pdf: "  en PDF",
 		skills_nav: "Comp&eacutetences",
 		ed_nav: "Formation",
 		hobs_nav: "Centres d'int&eacuter&ecirct",

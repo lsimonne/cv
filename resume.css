@@ -48,11 +48,10 @@ nav, .navbar, .nav, .navbar-right {
 }
 
 .navbar-default .navbar-nav>li>a{
-	/*color: #888788;*/
 	color: black;
 }
 
-.navbar-default:hover .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:hover{
 	color: #888788;
 }
 
@@ -69,9 +68,14 @@ nav, .navbar, .nav, .navbar-right {
 	background-color: black;
 }
 
+#contact_nav {
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
 #dot-nav{
 	right: 10px;
-	top: 60%;
+	top: 50%;
 	margin-top: -50px;
 	height: 100px;
 	z-index: 999;
@@ -137,23 +141,63 @@ ul {
 #lang_selectors {
 	text-align: right;
 	font-size: 0.7em;
+}
+
+.lang_selector {
 	cursor: pointer;
 }
 
-#fr:hover {
+.lang_selector:hover {
 	color: #888788;
 }
 
-#en:hover {
-	color: #888788;
+.section_title {
+	font-size: 1.2em;
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 2px solid #43D1AF;
+}
+
+.stars {
+	margin-left: 10px;
+	display: inline;
+}
+
+.glyphicon.glyphicon-star.filled {
+	color: #43D1AF;
+}
+
+.glyphicon.glyphicon-star {
+	color: #e6e6e6;
+}
+
+#comp_adj {
+	text-align: center;
+	font-style: italic;
 }
 
 footer {
 	background-color: #e6e6e6;
 	text-align: center;
 	vertical-align: middle;
-	padding: 50px;
+	padding: 70px;
 	margin-top: 50px;
+	height: 250px;
+}
+
+.copyright {
+	font-size: 0.7em;
+	margin-bottom: 0;
+}
+
+#github, #bitbucket {
+	margin-top: -1.5em;
+}
+
+.glyphicon-envelope {
+	font-size: 2em;
 }
 
 @media (min-width: 1200px) {
@@ -164,6 +208,10 @@ footer {
 	h1 {
 		font-size: 3em;
 		margin-bottom: 30px;
+	}
+
+	#dot-nav{
+		top: 60%;
 	}
 
 	#down_button {
