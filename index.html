@@ -14,21 +14,6 @@
 </head>
 
 <body data-spy="scroll" data-target="navbar" data-offset="50">
-	<div data-spy="affix" id="dot-nav">
-    	<ul>
-	      <li class="awesome-tooltip" title="Skills"><a href="#skills_title"></a></li>
-	      <li class="awesome-tooltip" title="Education"><a href="#education"></a></li>
-	      <li class="awesome-tooltip" title="Experience"><a href="#experience"></a></li>
-	      <li class="awesome-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
-
-	    </ul>
-	</div>
-	<span id="top_link" class="hidden">
-   		<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-   	    	<i class="glyphicon glyphicon-chevron-up"></i>
-   		</a>
-	</span>
-
 	<header id="top" class="container-fluid">
 		<div id="lang_selectors" class="row-fluid">
 			<span id="fr" class="btn-sm lang_selector">FR</span>
@@ -74,6 +59,20 @@
 
 
 <div class="container">
+<div data-spy="affix" id="dot-nav">
+    	<ul>
+	      <li class="awesome-tooltip" title="Skills"><a href="#skills_title"></a></li>
+	      <li class="awesome-tooltip" title="Education"><a href="#education"></a></li>
+	      <li class="awesome-tooltip" title="Experience"><a href="#experience"></a></li>
+	      <li class="awesome-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
+
+	    </ul>
+	</div>
+	<span id="top_link" class="hidden">
+   		<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+   	    	<i class="glyphicon glyphicon-chevron-up"></i>
+   		</a>
+	</span>
 
 	<section id="skills" class="row resume_section">
 		<div id="skills_title" class="section_title"></div>
