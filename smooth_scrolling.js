@@ -46,7 +46,7 @@ $(document).ready(function(){
         $('section').each(function(i,item){
           var ele = $(item), nextTop;
 
-          console.log(ele.next().html());
+          // console.log(ele.next().html());
 
           if (typeof ele.next().offset() != "undefined") {
             nextTop = ele.next().offset().top;
@@ -92,7 +92,6 @@ $(document).ready(function(){
     Note the window height + offset
 */
 if ( ($(window).height() + 100) < $(document).height() ) {
-  console.log("removing hidden");
     $('#top_link').removeClass('hidden').affix({
         offset: {top:100}
     });
