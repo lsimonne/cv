@@ -13,7 +13,7 @@ var pdf_resume = {
 }
 
 var dictEn = {
-	//
+		pdf: "  PDF version",
 		skills_nav: "Skills",
 		ed_nav: "Education",
 		hobs_nav: "Hobbies",
@@ -62,7 +62,7 @@ var dictEn = {
 };
 
 	var dictFr = {
-		// developpeuse en herbe
+		pdf: "  version PDF",
 		skills_nav: "Comp&eacutetences",
 		ed_nav: "Formation",
 		hobs_nav: "Centres d'int&eacuter&ecirct",
@@ -133,21 +133,27 @@ function setLang(lang) {
 			translate(dictEn);
 			fr.style.border = "none";
 			en.style.border = theme.border_style;
+			en.style.fontWeight = "bolder";
 			download.setAttribute("href", pdf_resume.en);
+			$("#sm_down_button").attr("href", pdf_resume.en);
 			break ;
 
 		case "fr":
 			translate(dictFr);
 			en.style.border = "none";
 			fr.style.border = theme.border_style;
+			fr.style.fontWeight = "bolder";
 			download.setAttribute("href", pdf_resume.fr);
+			$("#sm_down_button").attr("href", pdf_resume.fr);
 			break ;
 
 		default:
 			translate(dictFr);
 			en.style.border = "none";
 			fr.style.border = theme.border_style;
+			fr.style.fontWeight = "bolder";
 			download.setAttribute("href", pdf_resume.fr);
+			$("#sm_down_button").attr("href", pdf_resume.fr);
 	}
 }
 
@@ -174,4 +180,3 @@ document.getElementById("fr").addEventListener("click", function() {
 });
 
 };
-
