@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Louise Simonneau</title>
 
-	<!-- Text & fonts -->
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  	<!-- Bootstrap -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- My stylesheets & scripts -->
 	<link rel="stylesheet" type="text/css" href="resume.css">
 	<script type="text/javascript" src="translate.js"></script>
 </head>
 
-<body>
-	<header class="container-fluid">
+<body data-spy="scroll" data-target="navbar" data-offset="50">
+	<div data-spy="affix" id="dot-nav">
+    	<ul>
+	      <li class="awesome-tooltip" title="Skills"><a href="#skills_title"></a></li>
+	      <li class="awesome-tooltip" title="Education"><a href="#education"></a></li>
+	      <li class="awesome-tooltip" title="Experience"><a href="#experience"></a></li>
+	      <li class="awesome-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
+
+	    </ul>
+	</div>
+	<span id="top_link" class="hidden">
+   		<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+   	    	<i class="glyphicon glyphicon-chevron-up"></i>
+   		</a>
+	</span>
+
+	<header id="top" class="container-fluid">
 		<div id="lang_selectors" class="row-fluid">
 			<span id="fr" class="btn-sm lang_selector">FR</span>
 			<span id="en" class="btn-sm lang_selector">EN</span>
@@ -63,29 +71,67 @@
 		</div>
 	</header>
 
+
+
 <div class="container">
+
 	<section id="skills" class="row resume_section">
 		<div id="skills_title" class="section_title"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
+
+orem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
+</p>
 	</section>
 
-	<section id="eduction" class="row resume_section">
+	<section id="education" class="row resume_section">
 		<div id="ed_title" class="section_title"></div>
+		<p>Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti. Sed posuere auctor lacinia. Vivamus vestibulum, leo ut viverra porta, justo arcu vestibulum sapien, sed eleifend sem nisi quis arcu. Nullam quis lacus ac nibh vehicula iaculis. Suspendisse eget dolor viverra libero aliquam vehicula. Donec fringilla vestibulum nulla, id porttitor nulla scelerisque nec. Maecenas feugiat ullamcorper mollis. Sed commodo feugiat dolor ac aliquam. Nam hendrerit, diam quis ultrices semper, eros nunc hendrerit massa, quis dapibus dui nisl eu nisl.
+
+Pellentesque auctor ligula a placerat dictum. Praesent bibendum libero ligula, ut molestie ipsum porttitor nec. Nam eget lorem felis. Mauris auctor dolor sit amet viverra finibus. Mauris nec magna vel lorem ullamcorper lacinia vel eget massa. In non eros vel tortor efficitur imperdiet in id enim. Proin mauris sapien, feugiat a justo nec, luctus feugiat tellus.
+
+Curabitur in ligula fringilla, imperdiet nisl et, luctus sem. Curabitur pellentesque purus massa, eget molestie dolor viverra non. Aenean ut varius diam. Suspendisse pharetra eleifend diam, ut scelerisque nulla rutrum sed. Phasellus dapibus eros sem, a interdum tellus bibendum at. Suspendisse finibus orci ut neque pretium semper. Ut leo libero, rutrum eget efficitur scelerisque, ultricies sed nunc. Maecenas iaculis nisi vel interdum viverra.
+orem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
+</p>
 	</section>
 
 	<section id="experience" class="row resume_section">
 		<div id="exp_title" class="section_title"></div>
+		<p>Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti. Sed posuere auctor lacinia. Vivamus vestibulum, leo ut viverra porta, justo arcu vestibulum sapien, sed eleifend sem nisi quis arcu. Nullam quis lacus ac nibh vehicula iaculis. Suspendisse eget dolor viverra libero aliquam vehicula. Donec fringilla vestibulum nulla, id porttitor nulla scelerisque nec. Maecenas feugiat ullamcorper mollis. Sed commodo feugiat dolor ac aliquam. Nam hendrerit, diam quis ultrices semper, eros nunc hendrerit massa, quis dapibus dui nisl eu nisl.
+
+Pellentesque auctor ligula a placerat dictum. Praesent bibendum libero ligula, ut molestie ipsum porttitor nec. Nam eget lorem felis. Mauris auctor dolor sit amet viverra finibus. Mauris nec magna vel lorem ullamcorper lacinia vel eget massa. In non eros vel tortor efficitur imperdiet in id enim. Proin mauris sapien, feugiat a justo nec, luctus feugiat tellus.
+
+Curabitur in ligula fringilla, imperdiet nisl et, luctus sem. Curabitur pellentesque purus massa, eget molestie dolor viverra non. Aenean ut varius diam. Suspendisse pharetra eleifend diam, ut scelerisque nulla rutrum sed. Phasellus dapibus eros sem, a interdum tellus bibendum at. Suspendisse finibus orci ut neque pretium semper. Ut leo libero, rutrum eget efficitur scelerisque, ultricies sed nunc. Maecenas iaculis nisi vel interdum viverra.
+orem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
+</p>
 	</section>
 
 	<section id="hobbies" class="row resume_section">
 		<div id="hobbies_title" class="section_title"></div>
+		<p>Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti. Sed posuere auctor lacinia. Vivamus vestibulum, leo ut viverra porta, justo arcu vestibulum sapien, sed eleifend sem nisi quis arcu. Nullam quis lacus ac nibh vehicula iaculis. Suspendisse eget dolor viverra libero aliquam vehicula. Donec fringilla vestibulum nulla, id porttitor nulla scelerisque nec. Maecenas feugiat ullamcorper mollis. Sed commodo feugiat dolor ac aliquam. Nam hendrerit, diam quis ultrices semper, eros nunc hendrerit massa, quis dapibus dui nisl eu nisl.
+
+Pellentesque auctor ligula a placerat dictum. Praesent bibendum libero ligula, ut molestie ipsum porttitor nec. Nam eget lorem felis. Mauris auctor dolor sit amet viverra finibus. Mauris nec magna vel lorem ullamcorper lacinia vel eget massa. In non eros vel tortor efficitur imperdiet in id enim. Proin mauris sapien, feugiat a justo nec, luctus feugiat tellus.
+
+Curabitur in ligula fringilla, imperdiet nisl et, luctus sem. Curabitur pellentesque purus massa, eget molestie dolor viverra non. Aenean ut varius diam. Suspendisse pharetra eleifend diam, ut scelerisque nulla rutrum sed. Phasellus dapibus eros sem, a interdum tellus bibendum at. Suspendisse finibus orci ut neque pretium semper. Ut leo libero, rutrum eget efficitur scelerisque, ultricies sed nunc. Maecenas iaculis nisi vel interdum viverra.
+orem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
+</p>
 	</section>
 </div>
 
-<footer class="container-fluid">
+<footer class="container">
 	<span class="row-fluid copyright">&copy 2017 Louise Simonneau.</span>
 
 <!-- links to linkedin, github, etc. -->
 </footer>
+<script type="text/javascript" src="smooth_scrolling.js"></script>
 </body>
-
 </html>

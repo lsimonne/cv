@@ -3,11 +3,12 @@ body {
 	background-color: #F7F7F7;
 	box-sizing: border-box;
 	font-size: 16px;
+	position: relative;
 }
 
 header {
-	/*border-bottom: solid 2px black;*/
 	background-color: #43D1AF;
+	margin-bottom: 30px;
 }
 
 a {
@@ -21,11 +22,10 @@ a:link, a:visited, a:active {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.5em;
 	font-weight: normal;
 	margin-top: 0;
 }
-
 
 .row-fluid {
 	padding: 10px 10px 10px 10px;
@@ -35,6 +35,7 @@ h1 {
 nav, .navbar, .nav, .navbar-right {
 	background-color: #43D1AF;
 	border: none;
+	padding-top: 20px;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -54,12 +55,68 @@ nav, .navbar, .nav, .navbar-right {
 	background-color: black;
 }
 
+
+/*
+.navbar-fixed-top {
+	margin-top: 150px;
+	padding-right: 30px;
+	clear: both;
+}*/
+
+#dot-nav{
+	right: 10px;
+	top: 50%;
+	margin-top: -50px;
+	height: 100px;
+	z-index: 999;
+}
+
+#dot-nav li {
+	position: relative;
+	background-color: #bdc3c7;
+	border:3px solid #bdc3c7;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	padding: 5px;
+	height: 10px;
+	margin: 10px 10px 0px 0px;
+	width: 10px;
+	vertical-align:bottom;
+}
+
+#dot-nav li.active, #dot-nav li:hover {
+	background-color: #43D1AF;
+}
+
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #43D1AF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#top_link.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+}
+#top_link.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 90%;
+}
+
 #name {
 	text-align: center;
 }
 
 #download {
-	/*background-color: #e6e6e6;*/
 	text-align: center;
 }
 
@@ -72,3 +129,12 @@ nav, .navbar, .nav, .navbar-right {
 	text-align: right;
 	font-size: 0.7em;
 }
+
+footer {
+	height: 200px;
+	text-align: center;
+	padding: 50px;
+}
+
+.copyright {
+	/*vertical-align: middle;*/

@@ -164,8 +164,6 @@ function changeLang(lang) {
 window.onload = function () {
 
 setLang(window.localStorage.getItem("lang"));
-console.log(window.localStorage.getItem("lang"));
-
 
 document.getElementById("en").addEventListener("click", function() {
 	changeLang("en");
