@@ -92,6 +92,7 @@ $(document).ready(function(){
     Note the window height + offset
 */
 if ( ($(window).height() + 100) < $(document).height() ) {
+  console.log("removing hidden");
     $('#top_link').removeClass('hidden').affix({
         offset: {top:100}
     });
