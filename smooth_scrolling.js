@@ -25,12 +25,9 @@ $("#nav_bar a").on('click', function(event) {
   }
 });
 
-/*
-    Dot navigation
-*/
-
+/* Dot navigation */
 $(document).ready(function(){
-    $('.awesome-tooltip').tooltip({
+    $('.my-tooltip').tooltip({
         placement: 'left'
     });
 
@@ -45,8 +42,6 @@ $(document).ready(function(){
         $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');
         $('section').each(function(i,item){
           var ele = $(item), nextTop;
-
-          // console.log(ele.next().html());
 
           if (typeof ele.next().offset() != "undefined") {
             nextTop = ele.next().offset().top;

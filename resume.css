@@ -5,74 +5,66 @@ body {
 	font-size: 16px;
 	position: relative;
 }
-
 header {
 	background-color: #43D1AF;
 	margin-bottom: 30px;
+	padding-bottom: 20px;
 }
-
+p {
+	margin: 0;
+}
+.right_align {
+	text-align: right;
+}
 #photo {
 	height: 70%;
 	width: 70%;
 }
-
 #title {
 	padding: 5% 0px 0px 0px;
 }
-
 a {
 	color: black;
 	text-decoration: none;
 }
-
 a:link, a:visited, a:active {
 	text-decoration: none;
 	color: black;
 }
-
 h1 {
 	font-size: 2.5em;
 	font-weight: normal;
 	margin-top: 0px;
 	margin-bottom: 15px;
 }
-
 .row-fluid {
 	padding: 10px 10px 10px 10px;
 	clear: both;
 }
-
 nav, .navbar, .nav, .navbar-right {
 	background-color: #43D1AF;
 	border: none;
 }
-
 .navbar-default .navbar-nav>li>a{
 	color: black;
 }
-
-.navbar-default .navbar-nav>li>a:hover{
-	color: #888788;
+.glyphicon-download-alt {
+	font-size: 1.5em;
+	margin-left: 50px;
+	margin-bottom: -20px;
+	padding: 0;
 }
-
-.navbar-collapse {
-	border: none;
-}
-
-.navbar-default .navbar-toggle {
-	border: 2px solid black;
-	float: left;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: black;
-}
-
 #contact_nav {
 	border-radius: 5px;
 	border: 2px solid black;
+	float: right;
+	margin-top: -30px;
+	margin-right: 10px;
 }
-
+#contact_nav:hover {
+	color: #888788;
+	border: 2px solid #888788;
+}
 #dot-nav{
 	right: 10px;
 	top: 50%;
@@ -80,7 +72,6 @@ nav, .navbar, .nav, .navbar-right {
 	height: 100px;
 	z-index: 999;
 }
-
 #dot-nav li {
 	position: relative;
 	background-color: #e6e6e6;
@@ -93,12 +84,10 @@ nav, .navbar, .nav, .navbar-right {
 	width: 10px;
 	vertical-align:bottom;
 }
-
 #dot-nav li.active, #dot-nav li:hover {
 	background-color: #43D1AF;
 }
-
-.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+.my-tooltip + .tooltip.left > .tooltip-arrow{
     top: 50%;
     right:  0;
     margin-top: -5px;
@@ -106,11 +95,9 @@ nav, .navbar, .nav, .navbar-right {
     border-bottom: 5px solid transparent;
     border-left: 5px solid #43D1AF;
 }
-
 ul {
 	list-style-type: none;
 }
-
 #top_link.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px;
@@ -121,63 +108,65 @@ ul {
     bottom: 18px;
     left: 95%;
 }
-
 #down_button {
 	border: 2px solid black;
 	font-size: 0.8em;
 	color: black;
 	margin-left: 90px;
 }
-
 #down_button:hover {
 	color: #888788;
 	border: 2px solid #888788;
 }
-
 #sm_down_button {
 	display: none;
 }
-
 #lang_selectors {
 	text-align: right;
 	font-size: 0.7em;
 }
-
 .lang_selector {
 	cursor: pointer;
 }
-
 .lang_selector:hover {
 	color: #888788;
 }
-
+.resume_section {
+	margin-bottom: 50px;
+}
 .section_title {
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.5em;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	padding-top: 10px;
 	border-bottom: 2px solid #43D1AF;
 }
-
-.stars {
-	margin-left: 10px;
-	display: inline;
+.section_content {
+	margin: 0 5% 0 5%;
 }
-
+.subsection_title {
+	margin-bottom: 20px;
+}
+li.skill {
+	margin-bottom: 20px;
+}
 .glyphicon.glyphicon-star.filled {
 	color: #43D1AF;
 }
-
 .glyphicon.glyphicon-star {
 	color: #e6e6e6;
 }
-
 #comp_adj {
 	text-align: center;
 	font-style: italic;
 }
-
+.year {
+	font-size: 0.7em;
+}
+.description {
+	text-align: justify;
+	text-justify: inter-word;
+}
 footer {
 	background-color: #e6e6e6;
 	text-align: center;
@@ -186,75 +175,60 @@ footer {
 	margin-top: 50px;
 	height: 250px;
 }
-
 .copyright {
 	font-size: 0.7em;
 	margin-bottom: 0;
 }
-
-#github, #bitbucket {
+.link_img {
 	margin-top: -1.5em;
 }
-
 .glyphicon-envelope {
 	font-size: 2em;
+	margin-left: 7px;
 }
-
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	#title {
 		padding-left: 10%;
 	}
-
 	h1 {
-		font-size: 3em;
+		font-size: 4em;
 		margin-bottom: 30px;
 	}
-
 	#dot-nav{
 		top: 60%;
 	}
-
 	#down_button {
-		margin-left: 130px;
+		margin-left: 185px;
+		font-size: 1em;
 	}
 }
-
-
-@media (max-width: 767px) {
-
+@media only screen and (max-width: 767px) {
 	#top_link.affix {
 		left: 90%;
 	}
-
 	#photo {
 		height: 90%;
 		width: 90%;
 	}
 }
-
-@media (max-width: 664px) {
-	#down_button {
-		margin-left: 10px;
-	}
-
+@media only screen and (max-width: 664px) {
 	#title {
 		padding-top: 0%;
 	}
-}
-
-@media (max-width: 396px) {
-	h1 {
-		font-size: 2em;
-	}
-
 	#down_button {
 		display: none;
 	}
-
 	#sm_down_button {
 		display: block;
 	}
-
+	#contact_nav {
+		margin-top: -55px;
+	}
+}
+@media only screen and (max-width: 396px) {
+	h1 {
+		font-size: 2em;
+	}
 	.container-fluid {
 		padding-left: 0px;
 	}

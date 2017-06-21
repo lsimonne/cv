@@ -8,18 +8,19 @@ var theme = {
 var default_lang = "fr";
 
 var pdf_resume = {
-	en: "Louise\ Simonneau_CV_EN2017.pdf",
-	fr: "Louise\ Simonneau_CV_FR2017.pdf"
+	en: "dl/Louise\ Simonneau_CV_EN2017.pdf",
+	fr: "dl/Louise\ Simonneau_CV_FR2017.pdf"
 }
 
 var dictEn = {
-	// permis B
-		email_me: "EMAIL ME",
-		pdf: "  PDF version",
-		skills_nav: "Skills",
-		ed_nav: "Education",
-		hobs_nav: "Hobbies",
-		exp_nav: "Experience",
+
+		// about me
+		tooltips: {
+			skills_nav: "Skills",
+			ed_nav: "Education",
+			hobs_nav: "Hobbies",
+			exp_nav: "Experience",
+		},
 		down_button: "DOWNLOAD MY RESUME",
 		ed_title: "EDUCATION",
 		deg: "Degree in ",
@@ -28,12 +29,13 @@ var dictEn = {
 		pcem: "(1st year of Medical Studies)",
 		bac: "Scientific Baccalaur&eacuteat with highest honours",
 		skills_title: "SKILLS",
-		info: "IT",
+		info: "Programming languages and tools",
+		unix: "UNIX Environment",
 		lang: "Languages",
 		french: "French - mother tongue",
 		english: "English - fluent, spoken and written",
 		sp: "Spanish - intermeditate",
-		comp_adj: "Fast Learner, adaptable, independent, meticulous",
+		comp_adj: "Fast learner, adaptable, independent, meticulous",
 		exp_title: "WORK AND ASSOCIATIVE EXPERIENCE",
 		kiron_pos: "Volunteer - Computer Science Curriculum equivalence analysis",
 		recept: "Receptionist",
@@ -64,13 +66,13 @@ var dictEn = {
 };
 
 	var dictFr = {
-		// permis B
-		email_me: "ME CONTACTER",
-		pdf: "  en PDF",
-		skills_nav: "Comp&eacutetences",
-		ed_nav: "Formation",
-		hobs_nav: "Centres d'int&eacuter&ecirct",
-		exp_nav: "Exp&eacuterience",
+
+		tooltips: {
+			skills_nav: "Comp\xE9tences",
+			ed_nav: "Formation",
+			hobs_nav: "Divers",
+			exp_nav: "Exp\xE9rience",
+		},
 		down_button: "T&EacuteL&EacuteCHARGER MON CV",
 		ed_title: "FORMATION",
 		deg: "Licence",
@@ -79,7 +81,8 @@ var dictEn = {
 		pcem: "",
 		bac: "Baccalaur&eacuteat Scientifique, mention Tr&egraves Bien",
 		skills_title: "COMP&EacuteTENCES",
-		info: "Informatique",
+		info: "Programmation: langages et outils",
+		unix: "Environnement UNIX",
 		lang: "Langues",
 		french: "",
 		english: "Anglais courant",
@@ -125,6 +128,12 @@ function translate(dict) {
 		if (el)
 			el.innerHTML = text;
 	}
+	for (ref in dict["tooltips"]) {
+		el = document.getElementById(ref);
+			text = dict["tooltips"][ref];
+			if (el)
+				el.setAttribute("title", text);
+	}
 }
 
 function setLang(lang) {
@@ -141,7 +150,6 @@ function setLang(lang) {
 			download.setAttribute("href", pdf_resume.en);
 			$("#sm_down_button").attr("href", pdf_resume.en);
 			break ;
-
 		case "fr":
 			translate(dictFr);
 			en.style.border = "none";
@@ -150,7 +158,6 @@ function setLang(lang) {
 			download.setAttribute("href", pdf_resume.fr);
 			$("#sm_down_button").attr("href", pdf_resume.fr);
 			break ;
-
 		default:
 			translate(dictFr);
 			en.style.border = "none";
@@ -174,13 +181,10 @@ function changeLang(lang) {
 window.onload = function () {
 
 setLang(window.localStorage.getItem("lang"));
-
 document.getElementById("en").addEventListener("click", function() {
 	changeLang("en");
 });
-
 document.getElementById("fr").addEventListener("click", function() {
 	changeLang("fr");
 });
-
 };
