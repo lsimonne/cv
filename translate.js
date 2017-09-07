@@ -132,7 +132,7 @@ function translate(dict) {
 		el = document.getElementById(ref);
 			text = dict["tooltips"][ref];
 			if (el)
-				el.setAttribute("title", text);
+				el.setAttribute("data-original-title", text);
 	}
 }
 
