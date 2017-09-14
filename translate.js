@@ -1,7 +1,7 @@
 var theme = {
 	main_color: "#43D1AF",
 	bg_color: "#F7F7F7",
-	button_color: "rgb(230, 230, 230)",//"#e6e6e6",
+	button_color: "rgb(230, 230, 230)",
 	border_style: "solid 2px black"
 };
 
@@ -14,7 +14,6 @@ var pdf_resume = {
 
 var dictEn = {
 
-		// about me
 		tooltips: {
 			skills_nav: "Skills",
 			ed_nav: "Education",
@@ -45,10 +44,10 @@ var dictEn = {
 		horizon: "Work placement coordinator for French students",
 		london: "London (UK)",
 		ireland: "Ireland",
-		since_nov: "since November 2016",
+		since: "since",
 		jan: "January",
 		feb: "February",
-		march_june: "March - June 2015",
+		march: "March",
 		apr: "April",
 		may: "May",
 		june: "June",
@@ -62,7 +61,7 @@ var dictEn = {
 		hiking: "hiking",
 		travels: "Travels",
 		music: "mucic (guitar)",
-		reading: "reading",
+		reading: "",
 		descr_42: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. \
 					Throughout this course, I acquired the basics of computer programming \
 					(in C, PHP, HTLM, CSS, Javascript), as well as good coding practices \
@@ -70,12 +69,32 @@ var dictEn = {
 					in a very short time. I also developed my abilities to adapt and learn quickly, during the selection (C) and training (PHP) \"piscines\" \
 					(\"pools\", month long intensive courses).",
 		title_melex: "Master 1 M&eacutetiers du Lexique et de la Traduction",
-		title_lea: "Licence Langues &Eacutetrang&egraveres Appliqu&eacutees, parcours Traduction Sp&eacutecialis&eacutee Multilingue",
+		descr_melex: "",
+		title_lea: "Degree in LEA (Translation studies)",
 		descr_lea: "",
-		title_cine: "Licence Arts, parcours &Eacutetudes cin&eacutematographiques",
+		title_cine: "Degree in film studies",
 		descr_cine: "",
-		title_med: "Premier Cycle des &Eacutetudes M&eacutedicales 1",
-		title_bac: "Baccalaur&eacuteat Scientifique, sp&eacutecialit&eacute Math&eacutematiques, mention Tr&egraves Bien"
+		title_med: "PCEM 1 (1st year of medical studies)",
+		title_bac: "Scientific Baccalaur&eacuteat, with Highest Honours",
+		title_kiron: "B&eacuten&eacutevole, analyse d'&eacutequivalences de formations en Informatique",
+		descr_kiron: "Kiron France est une association qui vise à faciliter l'accès à l'éducation supérieure aux\
+					 personnes réfugiées et aux demandeurs d'asile, à travers un système hybride de formation.\
+					 L'étudiant réalise la première étape de son cursus en ligne via des MOOCs, \
+					 et intègre ensuite l’une de nos universités partenaires directement en Licence 2 \
+					 grâce à l’accréditation de leur formation.\
+					 </br>Mon rôle au sein de Kiron France est de trouver des équivalences de \
+					 modules entre les formations de nos universités partenaires et le cursus Informatique Kiron.",
+		title_ces: "Receptionist",
+		descr_ces: "",
+		title_trans: "Project Management Intern",
+		descr_trans: "Pr&eacuteparation des documents pour la traduction (blabla suite office), relecture finale, \
+					contact avec les traducteurs",
+		title_speedb: "General assistant",
+		descr_speedb: "",
+		title_stoneh: "Bed & Breakfast employee",
+		descr_stoneh: "",
+		title_horiz: "Work placement coordinator for French students",
+		descr_horiz: ""
 };
 
 	var dictFr = {
@@ -110,19 +129,19 @@ var dictEn = {
 		horizon: "Coordinatrice de stages pour des lyc&eacuteens fran&ccedilais",
 		london: "Londres (RU)",
 		ireland: "Irlande",
-		since_nov: "depuis novembre 2016",
-		jan: "Janvier",
-		feb: "F&eacutevrier",
-		march_june: "mars - juin 2015",
-		apr: "Avril",
-		may: "Mai",
-		june: "Juin",
-		jul: "Juillet",
-		aug: "Ao&ucirc",
-		sept: "Septembre",
-		oct: "Octobre",
-		nov: "Novembre",
-		dec: "D&eacutecembre",
+		since: "depuis",
+		jan: "janvier",
+		feb: "f&eacutevrier",
+		march: "mars",
+		apr: "avril",
+		may: "mai",
+		june: "juin",
+		jul: "juillet",
+		aug: "ao&ucirct",
+		sept: "septembre",
+		oct: "octobre",
+		nov: "novembre",
+		dec: "d&eacutecembre",
 		hobbies_title: "CENTRES D'INT&EacuteR&EcircT",
 		hiking: "randonn&eacute",
 		travels: "Voyages",
@@ -137,6 +156,7 @@ var dictEn = {
 					d'adaptabilit&eacute et d'apprentissage rapide, &agrave travers les piscines \
 					(un mois de formation intensive) de s&eacutelection en C, et de formation en PHP.",
 		title_melex: "Master 1 M&eacutetiers du Lexique et de la Traduction",
+		descr_melex: "",
 		title_lea: "Licence Langues &Eacutetrang&egraveres Appliqu&eacutees, parcours Traduction Sp&eacutecialis&eacutee Multilingue",
 		descr_lea: "blabla approfondissement de mon anglais, + bureautique (excel) + confrontation aux problemes concrets du metier de traducteur",
 		title_cine: "Licence Arts, parcours &Eacutetudes cin&eacutematographiques",
@@ -150,7 +170,18 @@ var dictEn = {
 					 et intègre ensuite l’une de nos universités partenaires directement en Licence 2 \
 					 grâce à l’accréditation de leur formation.\
 					 </br>Mon rôle au sein de Kiron France est de trouver des équivalences de \
-					 modules entre les formations de nos universités partenaires et le cursus Informatique Kiron."
+					 modules entre les formations de nos universités partenaires et le cursus Informatique Kiron.",
+		title_ces: "R&eacuteceptionniste",
+		descr_ces: "Accueil et orientation des groupes, ?",
+		title_trans: "Stagiaire en gestion de projet de traduction",
+		descr_trans: "Pr&eacuteparation des documents pour la traduction (blabla suite office), relecture finale, \
+					contact avec les traducteurs",
+		title_speedb: "Standardiste",
+		descr_speedb: "",
+		title_stoneh: "Employ&eacutee de Bed & Breakfast",
+		descr_stoneh: "",
+		title_horiz: "Coordinatrice de stages pour des lyc&eacuteens fran&ccedilais",
+		descr_horiz: ""
 };
 
 function translate(dict) {

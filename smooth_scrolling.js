@@ -81,6 +81,10 @@ $(document).ready(function(){
     });
 });
 
+/*
+** hide dot-nav when on header
+*/
+
 var isVisible = false;
 $(window).scroll(function(){
      var shouldBeVisible = $(window).scrollTop()>230;
