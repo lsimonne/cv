@@ -45,10 +45,10 @@ var dictEn = {
 		horizon: "Work placement coordinator for French students",
 		london: "London (UK)",
 		ireland: "Ireland",
-		since: "Since",
+		since_nov: "since November 2016",
 		jan: "January",
 		feb: "February",
-		march: "March",
+		march_june: "March - June 2015",
 		apr: "April",
 		may: "May",
 		june: "June",
@@ -62,7 +62,20 @@ var dictEn = {
 		hiking: "hiking",
 		travels: "Travels",
 		music: "mucic (guitar)",
-		reading: "reading"
+		reading: "reading",
+		descr_42: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. \
+					Throughout this course, I acquired the basics of computer programming \
+					(in C, PHP, HTLM, CSS, Javascript), as well as good coding practices \
+					(clean code, unit testing) and useful tools (UNIX working environment, Git), \
+					in a very short time. I also developed my abilities to adapt and learn quickly, during the selection (C) and training (PHP) \"piscines\" \
+					(\"pools\", month long intensive courses).",
+		title_melex: "Master 1 M&eacutetiers du Lexique et de la Traduction",
+		title_lea: "Licence Langues &Eacutetrang&egraveres Appliqu&eacutees, parcours Traduction Sp&eacutecialis&eacutee Multilingue",
+		descr_lea: "",
+		title_cine: "Licence Arts, parcours &Eacutetudes cin&eacutematographiques",
+		descr_cine: "",
+		title_med: "Premier Cycle des &Eacutetudes M&eacutedicales 1",
+		title_bac: "Baccalaur&eacuteat Scientifique, sp&eacutecialit&eacute Math&eacutematiques, mention Tr&egraves Bien"
 };
 
 	var dictFr = {
@@ -97,10 +110,10 @@ var dictEn = {
 		horizon: "Coordinatrice de stages pour des lyc&eacuteens fran&ccedilais",
 		london: "Londres (RU)",
 		ireland: "Irlande",
-		since: "Depuis",
+		since_nov: "depuis novembre 2016",
 		jan: "Janvier",
 		feb: "F&eacutevrier",
-		march: "Mars",
+		march_june: "mars - juin 2015",
 		apr: "Avril",
 		may: "Mai",
 		june: "Juin",
@@ -114,7 +127,30 @@ var dictEn = {
 		hiking: "randonn&eacute",
 		travels: "Voyages",
 		music: "musique (guitare)",
-		reading: ""
+		reading: "",
+		descr_42: "42 est une école de programmation informatique basée \
+					sur le peer-learning: pas de cours, pas de profs, un cursus 100% pratique et projet. \
+					Cette formation m'a permis d'acquérir les notions fondamentales de la programmation \
+					(en C, PHP, HTLM, CSS, Javascript), ainsi que d'en conna&icirctre les bonnes pratiques \
+					(clean code, tests unitaires) et les outils essentiels (environnement UNIX, Git), \
+					et ce en tr&egraves peu de temps. J'y ai &eacutegalement développ&eacute mes capacit&eacutes\
+					d'adaptabilit&eacute et d'apprentissage rapide, &agrave travers les piscines \
+					(un mois de formation intensive) de s&eacutelection en C, et de formation en PHP.",
+		title_melex: "Master 1 M&eacutetiers du Lexique et de la Traduction",
+		title_lea: "Licence Langues &Eacutetrang&egraveres Appliqu&eacutees, parcours Traduction Sp&eacutecialis&eacutee Multilingue",
+		descr_lea: "blabla approfondissement de mon anglais, + bureautique (excel) + confrontation aux problemes concrets du metier de traducteur",
+		title_cine: "Licence Arts, parcours &Eacutetudes cin&eacutematographiques",
+		descr_cine: "formation theorique en histoire et esthetique du cine, + relations cine autres formes artistiques, ouverture au monde de l'art , culture ecriture",
+		title_med: "Premier Cycle des &Eacutetudes M&eacutedicales 1",
+		title_bac: "Baccalaur&eacuteat Scientifique, sp&eacutecialit&eacute Math&eacutematiques, mention Tr&egraves Bien",
+		title_kiron: "B&eacuten&eacutevole, analyse d'&eacutequivalences de formations en Informatique",
+		descr_kiron: "Kiron France est une association qui vise à faciliter l'accès à l'éducation supérieure aux\
+					 personnes réfugiées et aux demandeurs d'asile, à travers un système hybride de formation.\
+					 L'étudiant réalise la première étape de son cursus en ligne via des MOOCs, \
+					 et intègre ensuite l’une de nos universités partenaires directement en Licence 2 \
+					 grâce à l’accréditation de leur formation.\
+					 </br>Mon rôle au sein de Kiron France est de trouver des équivalences de \
+					 modules entre les formations de nos universités partenaires et le cursus Informatique Kiron."
 };
 
 function translate(dict) {

@@ -67,10 +67,11 @@ nav, .navbar, .nav, .navbar-right {
 }
 #dot-nav{
 	right: 10px;
-	top: 50%;
-	margin-top: -50px;
+	top: calc(50% - 50px);
+	margin-top: 0;
 	height: 100px;
 	z-index: 999;
+	display: none;
 }
 #dot-nav li {
 	position: relative;
@@ -142,7 +143,14 @@ ul {
 	border-bottom: 2px solid #43D1AF;
 }
 .section_content {
-	margin: 0 5% 0 5%;
+	margin: 0px 5% 0 5%;
+}
+.section_unit {
+	margin-bottom: 20px;
+}
+.section_unit_title {
+	font-style: italic;
+	margin-bottom: 5px;
 }
 .subsection_title {
 	margin-bottom: 20px;
@@ -193,9 +201,6 @@ footer {
 	h1 {
 		font-size: 4em;
 		margin-bottom: 30px;
-	}
-	#dot-nav{
-		top: 60%;
 	}
 	#down_button {
 		margin-left: 185px;

@@ -27,8 +27,8 @@
 			<div id="title" class="col-xs-7 col-sm-8 col-md-8 col-lg-8">
 				<h1 id="name"><a href="#">Louise Simonneau</a></h1>
 				<div class="row">
-				<a id="down_button" class="btn-lg" target="blank"></a>
-      			<a id="sm_down_button" target="blank"><span class="btn-lg glyphicon glyphicon-download-alt"></span></a>
+				<a id="down_button" class="btn-lg" target="_blank"></a>
+      			<a id="sm_down_button" target="_blank"><span class="btn-lg glyphicon glyphicon-download-alt"></span></a>
 			</div>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 
 
 <div class="container main">
-<div data-spy="affix" id="dot-nav">
+<div  class="affix" id="dot-nav">
     	<ul>
 	      <li id="skills_nav" class="my-tooltip" title="Skills"><a href="#skills_title"></a></li>
 	      <li id="ed_nav" class="my-tooltip" title="Education"><a href="#education"></a></li>
@@ -208,26 +208,80 @@
 	<section id="education" class="row resume_section">
 		<div id="ed_title" class="section_title"></div>
 		<div class="section_content">
-			<a href="http://www.42.fr/" target="blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-				<img alt="&Eacutecole 42" src="img/42.png"></img>
-			</a>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<p>&Eacutecole 42</p>
-				<span class="year">Paris, 2015-2017</span>
+			<div class="row section_unit">
+				<a href="http://www.42.fr/" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="&Eacutecole 42" src="img/42.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>&Eacutecole 42</p>
+					<span class="year">Paris, 2015-2017</span>
+				</div>
+				<div id="descr_42" class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					
+				</div>
 			</div>
-			<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
-				Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti.
+			<div class="row section_unit">
+				<a href="http://cecille.recherche.univ-lille3.fr/ufr-llce/offre-de-formation/pole-master/master-mention-traduction/metiers-du-lexique-et-de-la/article/melextra-premiere-annee" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Lille 3" src="img/lille3.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Universit&eacute Lille 3</p>
+					<span class="year">Lille, 2014-2015</span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_melex" class="section_unit_title"></p>
+				</div>
 			</div>
-
-			<a href="" target="blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-				<img alt="Master M&eacutetiers du lexique et de la traduction" src="img/lille3.png"></img>
-			</a>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<p>Universit&eacute Lille 3</p>
-				<span class="year">Lille, 2014-2015</span>
+			<div class="row section_unit">
+				<a href="https://www.univ-lille3.fr/ufr-lea/" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Lille 3" src="img/lille3.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Universit&eacute Lille 3</p>
+					<span class="year">Lille, 2013-2014</span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_lea" class="section_unit_title"></p>
+					<p id="descr_lea"></p>
+				</div>
 			</div>
-			<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
-				Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti.
+			<div class="row section_unit">
+				<a href="https://www.univ-lille3.fr/ufr-lea/" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Lille 3" src="img/lille3.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Universit&eacute Lille 3</p>
+					<span class="year">Lille, 2009-2012</span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_cine" class="section_unit_title"></p>
+					<p id="descr_cine"></p>
+				</div>
+			</div>
+			<div class="row section_unit">
+				<a href="http://paces.univ-lille2.fr/" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Lille 2" src="img/lille3.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Universit&eacute Lille 2</p>
+					<span class="year">Lille, 2008-2009</span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_med" class="section_unit_title"></p>
+				</div>
+			</div>
+			<div class="row section_unit">
+				<a href="http://www.education.gouv.fr/annuaire/62-pas-de-calais/calais/lycee/lycee-pierre-de-coubertin.html"
+				target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Lyc&eacutee Coubertin" src="img/coubertin.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Lyc&eacutee Pierre de Coubertin</p>
+					<span class="year">Calais, 2008</span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_bac" class="section_unit_title"></p>
+				</div>
 			</div>
 		</div>
 
@@ -235,15 +289,51 @@
 
 	<section id="experience" class="row resume_section">
 		<div id="exp_title" class="section_title"></div>
-		<p>Fusce bibendum eu dui vel dapibus. Sed nibh lectus, ultricies at laoreet vitae, accumsan sit amet nisl. Vivamus fermentum magna orci, ut sodales sem consectetur eget. Nulla malesuada rutrum odio, eget varius nisl suscipit et. Cras quam nulla, ultrices eu quam sit amet, hendrerit eleifend turpis. Maecenas eget arcu cursus, dapibus urna eget, fermentum dui. Suspendisse potenti. Sed posuere auctor lacinia. Vivamus vestibulum, leo ut viverra porta, justo arcu vestibulum sapien, sed eleifend sem nisi quis arcu. Nullam quis lacus ac nibh vehicula iaculis. Suspendisse eget dolor viverra libero aliquam vehicula. Donec fringilla vestibulum nulla, id porttitor nulla scelerisque nec. Maecenas feugiat ullamcorper mollis. Sed commodo feugiat dolor ac aliquam. Nam hendrerit, diam quis ultrices semper, eros nunc hendrerit massa, quis dapibus dui nisl eu nisl.
-
-Pellentesque auctor ligula a placerat dictum. Praesent bibendum libero ligula, ut molestie ipsum porttitor nec. Nam eget lorem felis. Mauris auctor dolor sit amet viverra finibus. Mauris nec magna vel lorem ullamcorper lacinia vel eget massa. In non eros vel tortor efficitur imperdiet in id enim. Proin mauris sapien, feugiat a justo nec, luctus feugiat tellus.
-
-Curabitur in ligula fringilla, imperdiet nisl et, luctus sem. Curabitur pellentesque purus massa, eget molestie dolor viverra non. Aenean ut varius diam. Suspendisse pharetra eleifend diam, ut scelerisque nulla rutrum sed. Phasellus dapibus eros sem, a interdum tellus bibendum at. Suspendisse finibus orci ut neque pretium semper. Ut leo libero, rutrum eget efficitur scelerisque, ultricies sed nunc. Maecenas iaculis nisi vel interdum viverra.
-orem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat eget pharetra hendrerit. Mauris magna ipsum, pulvinar vitae odio eu, suscipit consectetur nunc. Donec in bibendum libero, nec semper neque. Mauris accumsan sit amet eros in venenatis. In nisl orci, facilisis nec scelerisque et, rutrum eget dui. Quisque faucibus viverra fringilla. Nullam id metus mi. Ut scelerisque enim bibendum, interdum magna vitae, pellentesque nulla. Integer eu ipsum eget mauris rhoncus placerat. Cras ligula ex, posuere ut ex at, malesuada dapibus nisl.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum augue enim, laoreet non cursus sed, sollicitudin sed ipsum. Suspendisse tincidunt interdum nisi, ut congue lacus porta id. Phasellus a urna at massa condimentum pellentesque porttitor eu ipsum. Suspendisse potenti. Sed fermentum tempus scelerisque. Aliquam in sodales leo. Pellentesque non pellentesque neque. Quisque dui risus, semper vel tortor fringilla, vulputate maximus massa. Aenean vestibulum ligula erat, in tempus magna porta sed. Ut eu venenatis felis.
-</p>
+		<div class="section_content">
+			<div class="row section_unit">
+				<a href="https://kiron.ngo/kiron-france-en/" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="Kiron" src="img/kiron.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Kiron France</p>
+					<span class="year">Paris, <span id="since_nov"></span></span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_kiron" class="section_unit_title"></p>
+					<p id="descr_kiron"></p>
+				</div>
+			</div>
+		</div>
+		<div class="section_content">
+			<div class="row section_unit">
+				<a href="http://www.auberge-jeunesse-calais.com" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="CES Calais" src="img/hostel.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p>Centre Europ&eacuteen de S&eacutejour</p>
+					<span class="year">Calais, <span id="march_june"></span></span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_hostel" class="section_unit_title"></p>
+					<p id="descr_hostel"></p>
+				</div>
+			</div>
+		</div>
+		<div class="section_content">
+			<div class="row section_unit">
+				<a href="" target="_blank" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<img alt="" src="img/.png"></img>
+				</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<p></p>
+					<span class="year"> <span id=""></span></span>
+				</div>
+				<div class="description col-xs-7 col-sm-7 col-md-7 col-lg-7">
+					<p id="title_" class="section_unit_title"></p>
+					<p id="descr_"></p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="hobbies" class="row resume_section">
@@ -265,9 +355,9 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 		<a href="mailto:louise.simonneau@gmail.com">louise.simonneau@gmail.com</a>
 	</div>
 	<div id="links" class="row-fluid">
-		<a href="https://github.com/lsimonne" target="blank"><img class="link_img" src="img/github.png" alt="Github"></a>
-		<a href="https://bitbucket.org/lsimonne/" target="blank"><img class="link_img" src="img/bitbucket.png" alt="Bitbucket"></a>
-		<a href="https://www.linkedin.com/in/louise-simonneau-8ba914130/" target="blank"><img class="link_img" src="img/linkedin.png" alt="LinkedIn"></a>
+		<a href="https://github.com/lsimonne" target="_blank"><img class="link_img" src="img/github.png" alt="Github"></a>
+		<a href="https://bitbucket.org/lsimonne/" target="_blank"><img class="link_img" src="img/bitbucket.png" alt="Bitbucket"></a>
+		<a href="https://www.linkedin.com/in/louise-simonneau-8ba914130/" target="_blank"><img class="link_img" src="img/linkedin.png" alt="LinkedIn"></a>
 		<a href="mailto:louise.simonneau@gmail.com" class="glyphicon glyphicon-envelope"></a>
 	</div>
 	<p class="copyright">&copy 2017 Louise Simonneau.</p>

@@ -70,7 +70,7 @@ $(document).ready(function(){
         var id = $(this).find('a').attr("href"),
           posi,
           ele,
-          padding = 0;
+          padding = -10;
 
         ele = $(id);
         posi = ($(ele).offset()||0).top - padding;
@@ -79,6 +79,18 @@ $(document).ready(function(){
 
         return false;
     });
+});
+
+var isVisible = false;
+$(window).scroll(function(){
+     var shouldBeVisible = $(window).scrollTop()>230;
+     if (shouldBeVisible && !isVisible) {
+          isVisible = true;
+          $('#dot-nav').show();
+     } else if (isVisible && !shouldBeVisible) {
+          isVisible = false;
+          $('#dot-nav').hide();
+    }
 });
 
 /*
@@ -90,4 +102,4 @@ if (($(window).height() + 300) < $(document).height()) {
     $('#top_link').removeClass('hidden').affix({
         offset: {top:300}
     });
-}
+  }
