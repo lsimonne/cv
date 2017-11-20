@@ -21,6 +21,7 @@ var dictEn = {
 			exp_nav: "Experience",
 		},
 		down_button: "DOWNLOAD MY RESUME",
+		job_descr: "",
 		ed_title: "EDUCATION",
 		deg: "Degree in ",
 		tsm: "(Translation studies)",
@@ -30,7 +31,7 @@ var dictEn = {
 		skills_title: "SKILLS",
 		info: "Programming languages and tools",
 		unix: "UNIX Environment",
-		lang: "Languages",
+		lang: "LANGUAGES",
 		french: "French - mother tongue",
 		english: "English - fluent, spoken and written",
 		sp: "Spanish - intermeditate",
@@ -45,23 +46,25 @@ var dictEn = {
 		london: "London (UK)",
 		ireland: "Ireland",
 		since: "since",
-		jan: "January",
-		feb: "February",
-		march: "March",
-		apr: "April",
-		may: "May",
-		june: "June",
-		jul: "July",
-		aug: "August",
-		sept: "September",
-		oct: "October",
-		nov: "November",
-		dec: "December",
+		months: {
+			jan: "January",
+			feb: "February",
+			march: "March",
+			apr: "April",
+			may: "May",
+			june: "June",
+			jul: "July",
+			aug: "August",
+			sept: "September",
+			oct: "October",
+			nov: "November",
+			dec: "December",
+		},
 		hobbies_title: "HOBBIES",
 		hiking: "hiking",
-		travels: "Travels",
+		travels: "TRAVELS",
 		music: "mucic (guitar)",
-		reading: "",
+		reading: "READING",
 		descr_42: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. \
 					Throughout this course, I acquired the basics of computer programming \
 					(in C, PHP, HTLM, CSS, Javascript), as well as good coding practices \
@@ -106,6 +109,7 @@ var dictEn = {
 			exp_nav: "Exp\xE9rience",
 		},
 		down_button: "T&EacuteL&EacuteCHARGER MON CV",
+		job_descr: "Développeuse en herbe",
 		ed_title: "FORMATION",
 		deg: "Licence",
 		tsm: "parcours Traduction Sp&eacutecialis&eacutee Multilingue",
@@ -115,7 +119,7 @@ var dictEn = {
 		skills_title: "COMP&EacuteTENCES",
 		info: "Programmation: langages et outils",
 		unix: "Environnement UNIX",
-		lang: "Langues",
+		lang: "LANGUES",
 		french: "",
 		english: "Anglais courant",
 		sp: "Espagnol scolaire",
@@ -130,23 +134,25 @@ var dictEn = {
 		london: "Londres (RU)",
 		ireland: "Irlande",
 		since: "depuis",
-		jan: "janvier",
-		feb: "f&eacutevrier",
-		march: "mars",
-		apr: "avril",
-		may: "mai",
-		june: "juin",
-		jul: "juillet",
-		aug: "ao&ucirct",
-		sept: "septembre",
-		oct: "octobre",
-		nov: "novembre",
-		dec: "d&eacutecembre",
+		months: {
+			jan: "janvier",
+			feb: "f&eacutevrier",
+			march: "mars",
+			apr: "avril",
+			may: "mai",
+			june: "juin",
+			jul: "juillet",
+			aug: "ao&ucirct",
+			sept: "septembre",
+			oct: "octobre",
+			nov: "novembre",
+			dec: "d&eacutecembre"
+		},
 		hobbies_title: "CENTRES D'INT&EacuteR&EcircT",
 		hiking: "randonn&eacute",
-		travels: "Voyages",
+		travels: "VOYAGES",
 		music: "musique (guitare)",
-		reading: "",
+		reading: "LECTURE",
 		descr_42: "42 est une école de programmation informatique basée \
 					sur le peer-learning: pas de cours, pas de profs, un cursus 100% pratique et projet. \
 					Cette formation m'a permis d'acquérir les notions fondamentales de la programmation \
@@ -200,6 +206,15 @@ function translate(dict) {
 			text = dict["tooltips"][ref];
 			if (el)
 				el.setAttribute("data-original-title", text);
+	}
+	for (ref in dict["months"]) {
+		elements = document.getElementsByClassName(ref);
+		if (elements) {
+			text = dict["months"][ref];
+			for (i = 0; i < elements.length; i++) {
+				elements[i].innerHTML = text;
+			}
+		}
 	}
 }
 

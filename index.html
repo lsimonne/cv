@@ -24,45 +24,40 @@
 		<div id="ls_dl" class="row-fluid">
 			<div class="col-xs-5 col-sm-4 col-md-4 col-lg-4"><img id="photo" alt="Louise Simonneau" src="img/resume_photo.png"></img></div>
 			<div id="title" class="col-xs-7 col-sm-8 col-md-8 col-lg-8">
-				<h1 id="name"><a href="#">Louise Simonneau</a></h1>
+				<h1 id="name">Louise Simonneau</h1>
 				<div class="row">
 				<a id="down_button" class="btn-lg" target="_blank"></a>
       			<a id="sm_down_button" target="_blank"><span class="btn-lg glyphicon glyphicon-download-alt"></span></a>
 			</div>
 			</div>
 		</div>
-		<nav id="nav_bar" class="row-fluid nav navbar-default">
-      		<ul class="nav navbar-nav navbar-right">
-      			<li>
-					<a id="contact_nav" class="btn-lg" href="#links">Contact</a>
-      			</li>
-		</nav>
+      	<div class="nav navbar-nav navbar-right">
+			<a id="contact_nav" class="btn-lg" href="#links">Contact</a>
+      	</div>
 	</header>
 
 
 
 <div class="container main">
-<div  class="affix" id="dot-nav">
-    	<ul>
-	      <li id="skills_nav" class="my-tooltip" title="Skills"><a href="#skills_title"></a></li>
-	      <li id="ed_nav" class="my-tooltip" title="Education"><a href="#education"></a></li>
-	      <li id="exp_nav" class="my-tooltip" title="Experience"><a href="#experience"></a></li>
-	      <li id="hobs_nav" class="my-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
-
-	    </ul>
+	<div  class="affix" id="dot-nav">
+		<ul>
+			<li id="skills_nav" class="my-tooltip" title="Skills"><a href="#skills_title"></a></li>
+			<li id="ed_nav" class="my-tooltip" title="Education"><a href="#education"></a></li>
+			<li id="exp_nav" class="my-tooltip" title="Experience"><a href="#experience"></a></li>
+			<li id="hobs_nav" class="my-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
+		</ul>
 	</div>
 	<span id="top_link" class="hidden affix-top">
-   		<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-   	    	<i class="glyphicon glyphicon-chevron-up"></i>
+		<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+   		    <i class="glyphicon glyphicon-chevron-up"></i>
    		</a>
 	</span>
-
 	<section id="skills" class="row resume_section">
 		<div id="skills_title" class="section_title"></div>
 		<div class="section_content">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="row skills_row">
-					<p id="info" class="subsection_title col-xs-12 col-sm-12 col-md-12 col-lg-12"></p>
+					<!-- <p id="info" class="subsection_title col-xs-12 col-sm-12 col-md-12 col-lg-12"></p> -->
 					<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<li class="skill">
 							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">C</span>
@@ -167,15 +162,21 @@
 							</div>
 						</li>
 				</ul>
-				<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<!-- <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="lang" class="subsection_title col-xs-12 col-sm-12 col-md-12 col-lg-12"></p>
 					<p id="french" class="skill_id"></p>
 					<p id="english" class="skill_id"></p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
 		<div id="comp_adj" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+	</section>
+
+	<section id="languages" class="row resume_section">
+		<div id="lang" class="section_title"></div>
+		<p id="french" class="skill_id"></p>
+		<p id="english" class="skill_id"></p>
 	</section>
 
 	<section id="education" class="row resume_section">
@@ -269,7 +270,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Kiron France</p>
-					<span class="year">Paris, <span id="since"> <span id="nov"> 2015</span></span>
+					<span class="year">Paris, <span id="since"></span> <span class="nov"></span> 2015</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_kiron" class="section_unit_title"></p>
@@ -282,7 +283,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Centre Europ&eacuteen de S&eacutejour</p>
-					<span class="year">Calais, <span id="march"></span> - <span id="june"></span> 2015</span>
+					<span class="year">Calais, <span class="march"></span> - <span class="june"></span> 2015</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_ces" class="section_unit_title"></p>
@@ -295,7 +296,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Transperfect Translations</p>
-					<span class="year"><span id="london"></span>, <span id="apr"></span> - <span id="aug"></span> 2014</span>
+					<span class="year"><span id="london"></span>, <span class="apr"></span> - <span class="aug"></span> 2014</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_trans" class="section_unit_title"></p>
@@ -308,7 +309,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Speed Burger</p>
-					<span class="year">Lille, <span id="june"></span> 2013 - <span id="march"></span> 2014</span>
+					<span class="year">Lille, <span class="june"></span> 2013 - <span class="march"></span> 2014</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_speedb" class="section_unit_title"></p>
@@ -321,7 +322,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Stone Haven Inn</p>
-					<span class="year">Valemount, BC (Canada),</br><span id="oct"></span> 2012 - <span id="jan"></span> 2013</span>
+					<span class="year">Valemount, BC (Canada)</br><span class="oct"></span> 2012 - <span class="jan"></span> 2013</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_stoneh" class="section_unit_title"></p>
@@ -334,7 +335,7 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Horizon Ireland</p>
-					<span class="year">Westport (<span id="ireland"></span>), <span id="june"></span> 2009</span>
+					<span class="year">Westport (<span id="ireland"></span>), <span class="june"></span> 2009</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 					<p id="title_horiz" class="section_unit_title"></p>
@@ -346,14 +347,19 @@
 	<section id="hobbies" class="row resume_section">
 		<div id="hobbies_title" class="section_title"></div>
 		<div class="row section_content">
-			<div class="circle-container">
-				<span class="center"><strong>SPORTS</strong></span>
-				<span class="deg135"><img alt="judo" src="img/judo.png"></span>
+			<div id="sports" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<span class="deg144"><img alt="judo" src="img/judo.png"></span>
 				<span class="deg0"><img alt="randonn&eacutee" src="img/rando.png"></span>
-				<span class="deg45"><img alt="ping pong" src="img/ping_pong.png"></span>
-				<span class="deg225"><img alt="badminton" src="img/bad.png"></span>
-				<span class="deg315"><img alt="v&eacutelo" src="img/velo.png"></span>
-
+				<span class="deg72"><img alt="ping pong" src="img/ping_pong.png"></span>
+				<span class="deg216"><img alt="badminton" src="img/bad.png"></span>
+				<span class="deg288"><img alt="v&eacutelo" src="img/velo.png"></span>
+			</div>
+			<div id="flags" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<span class="center"><img src="img/travel.png" alt="travelling"></span>
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-3 col-lg-3"></div>
+			<div id="books" class="circle-container col-lg-9 col-md-9 col-sm-12 col-xs-12">
+				<span class="center"><img src="img/reading.png" alt="reading"></span>
 			</div>
 		</div>
 	</section>
@@ -372,5 +378,6 @@
 	<p class="copyright">&copy 2017 Louise Simonneau.</p>
 </footer>
 <script type="text/javascript" src="smooth_scrolling.js"></script>
+<script type="text/javascript" src="img.js"></script>
 </body>
 </html>

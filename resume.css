@@ -54,6 +54,10 @@ nav, .navbar, .nav, .navbar-right {
 	margin-bottom: -20px;
 	padding: 0;
 }
+#job_descr {
+	font-size: 1.5em;
+	padding-left: 5%;
+}
 #contact_nav {
 	border-radius: 5px;
 	border: 2px solid black;
@@ -175,19 +179,20 @@ li.skill {
 	text-align: justify;
 	text-justify: inter-word;
 }
-/**test*/
-
+/*** CIRCLE CONTAINERS ***/
 .circle-container {
 	position: relative;
 	width: 12em;
 	height: 12em;
 	padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
 	border-radius: 50%;
-	margin-top: 20px;
+	margin-top: 50px;
+	float: left;
+	margin-left: 15%;
 }
 .circle-container span {
 	display: block;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: absolute;
 	top: 50%; left: 50%;
 	width: 4em; height: 4em;
@@ -195,14 +200,31 @@ li.skill {
 }
 .circle-container img { display: block;width: 100%;}
 .deg0 { transform: translate(6em); }  /*12em = half the width of the wrapper*/
-.deg45 { transform: rotate(72deg) translate(6em) rotate(-72deg); }
-.deg135 { transform: rotate(144deg) translate(6em) rotate(-144deg); }
+.deg72 { transform: rotate(72deg) translate(6em) rotate(-72deg); }
+.deg144 { transform: rotate(144deg) translate(6em) rotate(-144deg); }
 .deg180 { transform: translate(-12em); }
-.deg225 { transform: rotate(216deg) translate(6em) rotate(-216deg); }
-.deg315 { transform: rotate(288deg) translate(6em) rotate(-288deg); }
-.center {padding-top: calc(2em - 16px);text-align: center;}
-/*************/
+.deg216 { transform: rotate(216deg) translate(6em) rotate(-216deg); }
+.deg288 { transform: rotate(288deg) translate(6em) rotate(-288deg); }
+.deg51 { transform: rotate(51deg) translate(6em) rotate(-51deg);}
+.deg103 { transform: rotate(103deg) translate(6em) rotate(-103deg);}
+.deg154 { transform: rotate(154deg) translate(6em) rotate(-154deg);}
+.deg206 { transform: rotate(206deg) translate(6em) rotate(-206deg);}
+.deg257 { transform: rotate(257deg) translate(6em) rotate(-257deg);}
+.deg309 { transform: rotate(309deg) translate(6em) rotate(-309deg);}
+.deg90 { transform: rotate(95deg) translate(7.5em) rotate(-95deg);}
+.deg180 { transform: rotate(185deg) translate(7.5em) rotate(-185deg);}
+.deg270 { transform: rotate(275deg) translate(7.5em) rotate(-275deg);}
+
+#flags>.center  img {margin-top: -10px; vertical-align: top}
+#flags {margin-left: 30%;}
+#books img {margin-top: 0;}
+#books {height: 15em; width:15em;margin-top: 100px;}
+#books span {margin: -3.25em;height: auto;}
+#books>.center img {margin-top: 30px;}
+/********************************/
+
 footer {
+	clear: both;
 	background-color: #e6e6e6;
 	text-align: center;
 	vertical-align: middle;
