@@ -1,8 +1,38 @@
+function dotnavigation(){
+
+    var numSections = $("section").length;
+
+    $("#dot-nav li a").removeClass("active").parent("li").removeClass("active");
+    $("section").each(function(i,item){
+      var ele = $(item), nextTop;
+
+      if (typeof ele.next().offset() != "undefined") {
+        nextTop = ele.next().offset().top;
+      }
+      else {
+        nextTop = $(document).height();
+      }
+
+      if (ele.offset() !== null) {
+        thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
+      }
+      else {
+        thisTop = 0;
+      }
+
+      var docTop = $(document).scrollTop();
+
+      if(docTop >= thisTop && (docTop < nextTop)){
+        $("#dot-nav li").eq(i).addClass("active");
+      }
+    });
+}
+
 // Add scrollspy to <body>
-$('body').scrollspy({target: ".navbar", offset: 50});
+$("body").scrollspy({target: ".navbar", offset: 50});
 
 // Add smooth scrolling on all links inside the navbar
-$("#nav_bar a").on('click', function(event) {
+$("#nav_bar a").on("click", function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
@@ -15,7 +45,7 @@ $("#nav_bar a").on('click', function(event) {
 
     // Using jQuery's animate() method to add smooth page scroll
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
+    $("html, body").animate({
       scrollTop: $(hash).offset().top
     }, 800, function(){
 
@@ -27,47 +57,17 @@ $("#nav_bar a").on('click', function(event) {
 
 /* Dot navigation */
 $(document).ready(function(){
-    $('.my-tooltip').tooltip({
-        placement: 'left'
+    $(".my-tooltip").tooltip({
+        placement: "left"
     });
 
-    $(window).bind('scroll',function(e){
+    $(window).bind("scroll",function(e){
       dotnavigation();
     });
 
-    function dotnavigation(){
+    $("#dot-nav li").click(function(){
 
-        var numSections = $('section').length;
-
-        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');
-        $('section').each(function(i,item){
-          var ele = $(item), nextTop;
-
-          if (typeof ele.next().offset() != "undefined") {
-            nextTop = ele.next().offset().top;
-          }
-          else {
-            nextTop = $(document).height();
-          }
-
-          if (ele.offset() !== null) {
-            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
-          }
-          else {
-            thisTop = 0;
-          }
-
-          var docTop = $(document).scrollTop();
-
-          if(docTop >= thisTop && (docTop < nextTop)){
-            $('#dot-nav li').eq(i).addClass('active');
-          }
-        });
-    }
-
-    $('#dot-nav li').click(function(){
-
-        var id = $(this).find('a').attr("href"),
+        var id = $(this).find("a").attr("href"),
           posi,
           ele,
           padding = -10;
@@ -75,7 +75,7 @@ $(document).ready(function(){
         ele = $(id);
         posi = ($(ele).offset()||0).top - padding;
 
-        $('html, body').animate({scrollTop:posi}, 'slow');
+        $("html, body").animate({scrollTop:posi}, "slow");
 
         return false;
     });
@@ -90,10 +90,10 @@ $(window).scroll(function(){
      var shouldBeVisible = $(window).scrollTop()>230;
      if (shouldBeVisible && !isVisible) {
           isVisible = true;
-          $('#dot-nav').show();
+          $("#dot-nav").show();
      } else if (isVisible && !shouldBeVisible) {
           isVisible = false;
-          $('#dot-nav').hide();
+          $("#dot-nav").hide();
     }
 });
 
@@ -103,7 +103,7 @@ $(window).scroll(function(){
     Note the window height + offset
 */
 if (($(window).height() + 300) < $(document).height()) {
-    $('#top_link').removeClass('hidden').affix({
+    $("#top_link").removeClass("hidden").affix({
         offset: {top:300}
     });
   }
