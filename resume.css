@@ -62,7 +62,7 @@ nav, .navbar, .nav, .navbar-right {
 	border-radius: 5px;
 	border: 2px solid black;
 	float: right;
-	margin-top: -30px;
+	margin-top: 30px;
 	margin-right: 10px;
 }
 #contact_nav:hover {
@@ -113,13 +113,13 @@ ul {
     bottom: 18px;
     left: 95%;
 }
-#down_button {
+#downButton {
 	border: 2px solid black;
 	font-size: 0.8em;
 	color: black;
 	margin-left: 90px;
 }
-#down_button:hover {
+#downButton:hover {
 	color: #888788;
 	border: 2px solid #888788;
 }
@@ -157,20 +157,35 @@ ul {
 	margin-bottom: 5px;
 }
 .subsection_title {
+	font-size: 1.2em;
+	width: 100%;
+	margin-top: 20px;
 	margin-bottom: 20px;
+	border-bottom: 2px solid #e6e6e6;
 }
 li.skill {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	height: 3em;
+}
+.skill-icon {
+	height: 3em;
+	width: 3em;
 }
 .glyphicon.glyphicon-star.filled {
 	color: #43D1AF;
 }
 .glyphicon.glyphicon-star {
 	color: #e6e6e6;
+	font-size: 1.4em;
+	margin-top: 10px;
 }
-#comp_adj {
+#compAdj {
 	text-align: center;
 	font-style: italic;
+	padding-bottom: 20px;
+}
+.lang_stars {
+	padding: 0;
 }
 .year {
 	font-size: 0.7em;
@@ -199,21 +214,21 @@ li.skill {
 	margin: -2em; /* 2em = 4em/2 */ /* half the width */
 }
 .circle-container img { display: block;width: 100%;}
-.deg0 { transform: translate(6em); }  /*12em = half the width of the wrapper*/
-.deg72 { transform: rotate(72deg) translate(6em) rotate(-72deg); }
-.deg144 { transform: rotate(144deg) translate(6em) rotate(-144deg); }
+.deg0 { transform: rotate(5deg) translate(6em) rotate(-5deg); }  /*12em = half the width of the wrapper*/
+.deg72 { transform: rotate(77deg) translate(6em) rotate(-77deg); }
+.deg144 { transform: rotate(149deg) translate(6em) rotate(-149deg); }
 .deg180 { transform: translate(-12em); }
-.deg216 { transform: rotate(216deg) translate(6em) rotate(-216deg); }
-.deg288 { transform: rotate(288deg) translate(6em) rotate(-288deg); }
-.deg51 { transform: rotate(51deg) translate(6em) rotate(-51deg);}
-.deg103 { transform: rotate(103deg) translate(6em) rotate(-103deg);}
-.deg154 { transform: rotate(154deg) translate(6em) rotate(-154deg);}
-.deg206 { transform: rotate(206deg) translate(6em) rotate(-206deg);}
-.deg257 { transform: rotate(257deg) translate(6em) rotate(-257deg);}
-.deg309 { transform: rotate(309deg) translate(6em) rotate(-309deg);}
-.deg90 { transform: rotate(95deg) translate(7.5em) rotate(-95deg);}
-.deg180 { transform: rotate(185deg) translate(7.5em) rotate(-185deg);}
-.deg270 { transform: rotate(275deg) translate(7.5em) rotate(-275deg);}
+.deg216 { transform: rotate(221deg) translate(6em) rotate(-221deg); }
+.deg288 { transform: rotate(293deg) translate(6em) rotate(-293deg); }
+.deg51 { transform: rotate(56deg) translate(6em) rotate(-56deg);}
+.deg103 { transform: rotate(108deg) translate(6em) rotate(-108deg);}
+.deg154 { transform: rotate(159deg) translate(6em) rotate(-159deg);}
+.deg206 { transform: rotate(211deg) translate(6em) rotate(-211deg);}
+.deg257 { transform: rotate(262deg) translate(6em) rotate(-262deg);}
+.deg309 { transform: rotate(314deg) translate(6em) rotate(-314deg);}
+.deg90 { transform: rotate(100deg) translate(7.5em) rotate(-100deg);}
+.deg180 { transform: rotate(190deg) translate(7.5em) rotate(-190deg);}
+.deg270 { transform: rotate(280deg) translate(7.5em) rotate(-280deg);}
 
 #flags>.center  img {margin-top: -10px; vertical-align: top}
 #flags {margin-left: 30%;}
@@ -251,10 +266,22 @@ footer {
 		font-size: 4em;
 		margin-bottom: 30px;
 	}
-	#down_button {
+	#downButton {
 		margin-left: 185px;
 		font-size: 1em;
 	}
+	#contact_nav {
+		margin-top: 65px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	#sports, #flags, #books {
+		display: none;
+	}
+	.glyphicon.glyphicon-star {
+	color: #e6e6e6;
+	font-size: 1.2em;
+}
 }
 @media only screen and (max-width: 767px) {
 	#top_link.affix {
@@ -269,21 +296,26 @@ footer {
 	#title {
 		padding-top: 0%;
 	}
-	#down_button {
+	#downButton {
 		display: none;
 	}
 	#sm_down_button {
 		display: block;
 	}
 	#contact_nav {
-		margin-top: -55px;
+		margin-top: -20px;
 	}
+
 }
-@media only screen and (max-width: 396px) {
+
+@media only screen and (max-width: 415px) {
 	h1 {
 		font-size: 2em;
 	}
 	.container-fluid {
 		padding-left: 0px;
 	}
+	/*#sports, #flags, #books {
+		display: none;
+	}*/
 }

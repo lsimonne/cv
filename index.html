@@ -26,7 +26,7 @@
 			<div id="title" class="col-xs-7 col-sm-8 col-md-8 col-lg-8">
 				<h1 id="name">Louise Simonneau</h1>
 				<div class="row">
-				<a id="down_button" class="btn-lg" target="_blank"></a>
+				<a id="downButton" class="btn-lg" target="_blank"></a>
       			<a id="sm_down_button" target="_blank"><span class="btn-lg glyphicon glyphicon-download-alt"></span></a>
 			</div>
 			</div>
@@ -41,10 +41,10 @@
 <div class="container main">
 	<div  class="affix" id="dot-nav">
 		<ul>
-			<li id="skills_nav" class="my-tooltip" title="Skills"><a href="#skills_title"></a></li>
-			<li id="ed_nav" class="my-tooltip" title="Education"><a href="#education"></a></li>
-			<li id="exp_nav" class="my-tooltip" title="Experience"><a href="#experience"></a></li>
-			<li id="hobs_nav" class="my-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
+			<li id="skillsNav" class="my-tooltip" title="Skills"><a href="#skillsTitle"></a></li>
+			<li id="edNav" class="my-tooltip" title="Education"><a href="#education"></a></li>
+			<li id="expNav" class="my-tooltip" title="Experience"><a href="#experience"></a></li>
+			<li id="hobsNav" class="my-tooltip" title="Hobbies"><a href="#hobbies"></a></li>
 		</ul>
 	</div>
 	<span id="top_link" class="hidden affix-top">
@@ -53,13 +53,17 @@
    		</a>
 	</span>
 	<section id="skills" class="row resume_section">
-		<div id="skills_title" class="section_title"></div>
+		<div id="skillsTitle" class="section_title"></div>
 		<div class="section_content">
+		<div id="compAdj" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="programming" class="subsection_title"></div>
 				<div class="row skills_row">
 					<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">C</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img class="skill-icon" src="img/c.svg" alt="C">
+							</div>
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -69,7 +73,8 @@
 							</div>
 						</li>
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">PHP</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/php.svg" alt="PHP"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">PHP</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -79,7 +84,8 @@
 							</div>
 						</li>
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">HTML5</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/html5.svg" alt="HTML5"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">HTML5</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -89,7 +95,8 @@
 							</div>
 						</li>
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">CSS3</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/css3.svg" alt="CSS3"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">CSS3</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -99,7 +106,8 @@
 							</div>
 						</li>
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Bootstrap</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/bootstrap.svg" alt="Bootstrap"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Bootstrap</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -111,37 +119,19 @@
 						</ul>
 					<ul class="no-bullets col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Javascript</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/javascript.svg" alt="Javascript"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Javascript</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star"></span>
-							</div>
-						</li>
-						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">JQuery</span>
-							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 							</div>
 						</li>
 						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">MySQL</span>
-							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star"></span>
-								<span class="glyphicon glyphicon-star"></span>
-								<span class="glyphicon glyphicon-star"></span>
-								<span class="glyphicon glyphicon-star"></span>
-							</div>
-						</li>
-						<li class="skill">
-							<span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Git</span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/jquery.svg" alt="jQuery"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">JQuery</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
 								<span class="glyphicon glyphicon-star filled"></span>
@@ -151,30 +141,102 @@
 							</div>
 						</li>
 						<li class="skill">
-							<span id="unix" class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6"></span>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/mysql.svg" alt="MySQL"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">MySQL</span> -->
 							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star filled"></span>
-								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 								<span class="glyphicon glyphicon-star"></span>
 							</div>
 						</li>
 				</ul>
 			</div>
+			<div id="tools" class="subsection_title"></div>
+				<div class="row skills_row">
+					<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<li class="skill">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/git.svg" alt="Git"></div>
+							<!-- <span class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6">Git</span> -->
+							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</div>
+						</li>
+						<li class="skill">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img class="skill-icon" src="img/unix.png" alt="Unix Shell"></div>
+							<!-- <span id="unix" class="skill_id col-xs-6 col-sm-6 col-md-6 col-lg-6"></span> -->
+							<div class="stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</div>
+						</li>
+						<!--- add Office, Gimp, ?-->
+					</ul>
+				</div>
+		</div>
+		
+		<div id="languages" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="lang" class="subsection_title"></div>
+			<div class="section_content">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="row skills_row">
+						<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<li class="skill">
+								<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+									<img alt="Français" src="img/fr.png"></img>
+								</div>
+								<div class="lang_stars stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+								</div>
+							</li>
+						</ul>
+						<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<li class="skill">
+								<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+									<img alt="English" src="img/uk.png"></img>
+								</div>
+								<div class="lang_stars stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+								</div>
+							</li>
+						</ul>
+						<ul class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<li class="skill">
+								<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+									<img alt="Español" src="img/spain.png"></img>
+								</div>
+								<div class="lang_stars stars col-xs-6 col-sm-6 col-md-6 col-lg-6">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</div>
 		</div>
 	</div>
-		<div id="comp_adj" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 	</section>
-
-	<section id="languages" class="row resume_section">
-		<div id="lang" class="section_title"></div>
-		<p id="french" class="skill_id"></p>
-		<p id="english" class="skill_id"></p>
-	</section>
-
 	<section id="education" class="row resume_section">
-		<div id="ed_title" class="section_title"></div>
+		<div id="edTitle" class="section_title"></div>
 		<div class="section_content">
 			<div class="row section_unit">
 				<a href="http://www.42.fr/" target="_blank" class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
@@ -184,7 +246,7 @@
 					<p>&Eacutecole 42</p>
 					<span class="year">Paris, 2015-2017</span>
 				</div>
-				<div id="descr_42" class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
+				<div id="descr42" class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
 
 				</div>
 			</div>
@@ -197,7 +259,7 @@
 					<span class="year">Lille, 2014-2015</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_melex" class="section_unit_title"></p>
+					<p id="titleMelex" class="section_unit_title"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -209,8 +271,8 @@
 					<span class="year">Lille, 2013-2014</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_lea" class="section_unit_title"></p>
-					<p id="descr_lea"></p>
+					<p id="titleLea" class="section_unit_title"></p>
+					<p id="descrLea"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -222,8 +284,8 @@
 					<span class="year">Lille, 2009-2012</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_cine" class="section_unit_title"></p>
-					<p id="descr_cine"></p>
+					<p id="titleCine" class="section_unit_title"></p>
+					<p id="descrCine"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -235,7 +297,7 @@
 					<span class="year">Lille, 2008-2009</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_med" class="section_unit_title"></p>
+					<p id="titleMed" class="section_unit_title"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -248,15 +310,37 @@
 					<span class="year">Calais, 2008</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_bac" class="section_unit_title"></p>
+					<p id="titleBac" class="section_unit_title"></p>
 				</div>
 			</div>
 		</div>
-
 	</section>
-
+	<!--
+	<section id="moocs" class="row resume_section">
+		<div id="moocsTitle" class="section_title"></div>
+			<div class="section_content">
+				<div class="row section_unit">
+					<a href="https://www.coursera.org/" target="_blank" class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+						<img alt="coursera" src="img/coursera.png">
+					</a>
+					<div id="coursera" class="description col-xs-12 col-sm-11 col-md-11 col-lg-11">
+						<p id="titleAgile" class="section_unit_title"></p>
+						<p id="descrAgile"></p>
+						</br>
+						<p id="titleJava" class="section_unit_title"></p>
+						<p id="descrJava"></p>
+					</div>
+				</div>
+				<div class="row section_unit">
+					<a href="" target="_blank" class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+						<img alt="FUN" src="img/fun.png">
+					</a>
+				</div>
+			</div>
+	</section>
+	 -->
 	<section id="experience" class="row resume_section">
-		<div id="exp_title" class="section_title"></div>
+		<div id="expTitle" class="section_title"></div>
 		<div class="section_content">
 			<div class="row section_unit">
 				<a href="https://kiron.ngo/kiron-france-en/" target="_blank" class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
@@ -264,11 +348,11 @@
 				</a>
 				<div class="col-xs-9 col-sm-3 col-md-4 col-lg-4">
 					<p>Kiron France</p>
-					<span class="year">Paris, <span id="since"></span> <span class="nov"></span> 2015</span>
+					<span class="year">Paris, <span class="nov"></span> 2015 - <span class="june"></span> 2017</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_kiron" class="section_unit_title"></p>
-					<p id="descr_kiron"></p>
+					<p id="titleKiron" class="section_unit_title"></p>
+					<p id="descrKiron"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -280,8 +364,8 @@
 					<span class="year">Calais, <span class="march"></span> - <span class="june"></span> 2015</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_ces" class="section_unit_title"></p>
-					<p id="descr_ces"></p>
+					<p id="titleCes" class="section_unit_title"></p>
+					<p id="descrCes"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -293,8 +377,8 @@
 					<span class="year"><span id="london"></span>, <span class="apr"></span> - <span class="aug"></span> 2014</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_trans" class="section_unit_title"></p>
-					<p id="descr_trans"></p>
+					<p id="titleTrans" class="section_unit_title"></p>
+					<p id="descrTrans"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -306,8 +390,8 @@
 					<span class="year">Lille, <span class="june"></span> 2013 - <span class="march"></span> 2014</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_speedb" class="section_unit_title"></p>
-					<p id="descr_speedb"></p>
+					<p id="titleSpeedb" class="section_unit_title"></p>
+					<p id="descrSpeedb"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -319,8 +403,8 @@
 					<span class="year">Valemount, BC (Canada)</br><span class="oct"></span> 2012 - <span class="jan"></span> 2013</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_stoneh" class="section_unit_title"></p>
-					<p id="descr_stoneh"></p>
+					<p id="titleStoneh" class="section_unit_title"></p>
+					<p id="descrStoneh"></p>
 				</div>
 			</div>
 			<div class="row section_unit">
@@ -332,28 +416,34 @@
 					<span class="year">Westport (<span id="ireland"></span>), <span class="june"></span> 2009</span>
 				</div>
 				<div class="description col-xs-12 col-sm-8 col-md-7 col-lg-7">
-					<p id="title_horiz" class="section_unit_title"></p>
-					<p id="descr_horiz"></p>
+					<p id="titleHoriz" class="section_unit_title"></p>
+					<p id="descrHoriz"></p>
 				</div>
 			</div>
 	</section>
 
 	<section id="hobbies" class="row resume_section">
-		<div id="hobbies_title" class="section_title"></div>
+		<div id="hobbiesTitle" class="section_title"></div>
 		<div class="row section_content">
-			<div id="sports" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<span class="deg144"><img alt="judo" src="img/judo.png"></span>
-				<span class="deg0"><img alt="randonn&eacutee" src="img/rando.png"></span>
-				<span class="deg72"><img alt="ping pong" src="img/ping_pong.png"></span>
-				<span class="deg216"><img alt="badminton" src="img/bad.png"></span>
-				<span class="deg288"><img alt="v&eacutelo" src="img/velo.png"></span>
-			</div>
+			<div id="sports" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12"></div>
 			<div id="flags" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<span class="center"><img src="img/travel.png" alt="travelling"></span>
 			</div>
+		</div>
+		<div class="row section_content">
 			<div class="col-xs-1 col-sm-1 col-md-3 col-lg-3"></div>
 			<div id="books" class="circle-container col-lg-9 col-md-9 col-sm-12 col-xs-12">
 				<span class="center"><img src="img/reading.png" alt="reading"></span>
+			</div>
+		</div>
+		<div class="row section_content">
+			<div id="cinema" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<span class="center"><img src="img/cinema.png" alt="cinema"></span>
+			</div>
+						<div class="col-xs-1 col-sm-1 col-md-3 col-lg-3"></div>
+
+			<div id="music" class="circle-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<span class="center"><img src="img/music.png" alt="music"></span>
 			</div>
 		</div>
 	</section>

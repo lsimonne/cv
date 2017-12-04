@@ -1,6 +1,8 @@
 function dotnavigation(){
 
     var numSections = $("section").length;
+    var thisTop;
+    var nextTop;
 
     $("#dot-nav li a").removeClass("active").parent("li").removeClass("active");
     $("section").each(function(i,item){
