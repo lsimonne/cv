@@ -28,7 +28,7 @@ var books = [{name: "etranger", title: "L'étranger"}, {name: "hitch", title: "T
 			{name: "moon", title: "Moon Palace"}, {name: "vernon", title: "Vernon Subutex"}];
 var cinema = [{name: "alabama", title: "Alabama Monroe"}, {name: "seal", title: "The Seventh Seal"},
 			{name: "jacket", title: "Full Metal Jacket"}, {name: "fargo", title: "Fargo"},
-			{name: "pulp", title: "Pulp Fiction"}]
+			{name: "pulp", title: "Pulp Fiction"}];
 var sports = [{name: "judo", title: "judo"}, {name: "rando", title: "randonnée"}, {name: "ping_pong", title: "ping pong"},
 			{name: "bad", title: "badminton"}, {name: "velo", title: "vélo"}];
 var music = [{name: "clapton", title: "Eric Clapton", href: ""},
@@ -39,5 +39,5 @@ var music = [{name: "clapton", title: "Eric Clapton", href: ""},
 addImageCircle(sports, sports.length, "sports");
 addImageCircle(countries, countries.length, "flags");
 addImageCircle(books, books.length, "books");
-addImageCircle(cinema, cinema.length, "cinema");
-addImageCircle(music, music.length, "music");
+/*addImageCircle(cinema, cinema.length, "cinema");
+addImageCircle(music, music.length, "music");*/

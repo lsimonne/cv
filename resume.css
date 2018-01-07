@@ -176,7 +176,7 @@ li.skill {
 }
 .glyphicon.glyphicon-star {
 	color: #e6e6e6;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin-top: 10px;
 }
 #compAdj {
@@ -233,11 +233,14 @@ li.skill {
 #flags>.center  img {margin-top: -10px; vertical-align: top}
 #flags {margin-left: 30%;}
 #books img {margin-top: 0;}
-#books {height: 15em; width:15em;margin-top: 100px;}
+#books {height: 15em; width:15em;margin-top: 50px; margin-left: 150px}
 #books span {margin: -3.25em;height: auto;}
 #books>.center img {margin-top: 30px;}
 /********************************/
-
+.quote{
+	margin-top: 70px;
+	font-style: italic;
+}
 footer {
 	clear: both;
 	background-color: #e6e6e6;
@@ -275,7 +278,7 @@ footer {
 	}
 }
 @media only screen and (max-width: 900px) {
-	#sports, #flags, #books {
+	.circle-container{
 		display: none;
 	}
 	.glyphicon.glyphicon-star {
