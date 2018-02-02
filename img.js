@@ -21,7 +21,7 @@ function addImageCircle(imageArray, size, className){
 	}
 }
 	
-var countries = [{name: "uk", title: "United Kingdom"}, {name: "usa", title: "USA"}, {name: "spain", title: "Spain"},
+var countries = [{name: "UK", title: "United Kingdom"}, {name: "usa", title: "USA"}, {name: "spain", title: "Spain"},
 				{name: "canada", title: "Canada"}, {name: "botswana", title: "Botswana"}, {name: "germany", title: "Germany"},
 				{name: "netherlands", title: "Netherlands"}];
 var books = [{name: "etranger", title: "L'étranger"}, {name: "hitch", title: "The Hitchhiker's Guide to the Galaxy"},
