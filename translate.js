@@ -9,7 +9,7 @@ const DEFAULT_LANG = "fr";
 
 const PDF_RESUME = {
 	en: "dl/Louise\ Simonneau_CV_EN2017.pdf",
-	fr: "dl/Louise\ Simonneau_CV_FR2017.pdf"
+	fr: "dl/Louise\ Simonneau_CV_FR2018.pdf"
 };
 
 var dict = {
