@@ -13,21 +13,8 @@ function addImageCircle(imageArray, size, className){
 		$("#" + className).append(span);
 	}
 }
-	
-var countries = [{name: "uk", title: "United Kingdom"}, {name: "usa", title: "USA"}, {name: "spain", title: "Spain"},
-				{name: "canada", title: "Canada"}, {name: "botswana", title: "Botswana"}, {name: "germany", title: "Germany"},
-				{name: "netherlands", title: "Netherlands"}];
-var books = [{name: "etranger", title: "L'étranger"}, {name: "hitch", title: "The Hitchhiker's Guide to the Galaxy"},
-			{name: "moon", title: "Moon Palace"}, {name: "vernon", title: "Vernon Subutex"}];
-var cinema = [{name: "alabama", title: "Alabama Monroe"}, {name: "seal", title: "The Seventh Seal"},
-			{name: "jacket", title: "Full Metal Jacket"}, {name: "fargo", title: "Fargo"},
-			{name: "pulp", title: "Pulp Fiction"}];
+
 var sports = [{name: "judo", title: "judo"}, {name: "rando", title: "randonnée"}, {name: "ping_pong", title: "ping pong"},
 			{name: "bad", title: "badminton"}, {name: "velo", title: "vélo"}];
-var music = [{name: "clapton", title: "Eric Clapton", href: ""},
-			{name: "boris", title: "Boris Brejcha", href: "https://www.youtube.com/watch?v=pEMOSjkz7xQ"},
-			{name: "feist", title: "Feist", href: "https://www.youtube.com/watch?v=wfEPvebGGJM&list=PLLtsHTptOPbU8eYOKnOAd8NdppR2jAX4W"},
-			{name: "nirvana", title: "Nirvana", href: "https://www.youtube.com/watch?v=mGpYumd_PHE"},
-			{name: "elvis", title: "Roméo Elvis", href: "https://www.youtube.com/watch?v=ht8FlJjdBJY"}];
+
 addImageCircle(sports, sports.length, "sports");
-//addImageCircle(countries, countries.length, "flags");
