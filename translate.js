@@ -1,4 +1,4 @@
-var theme = {
+const THEME = {
 	mainColor: "#43D1AF",
 	bgColor: "#F7F7F7",
 	buttonColor: "rgb(230, 230, 230)",
@@ -8,11 +8,11 @@ var theme = {
 const DEFAULT_LANG = "fr";
 
 const PDF_RESUME = {
-	en: "dl/Louise\ Simonneau_CV_EN2017.pdf",
+	en: "dl/Louise\ Simonneau_CV_FR2018.pdf",
 	fr: "dl/Louise\ Simonneau_CV_FR2018.pdf"
 };
 
-var dict = {
+const DICT = {
 		tooltips: {
 			skillsNav: {en: "Skills", fr: "Comp\xE9tences"},
 			edNav: {en: "Education", fr: "Formation"},
@@ -21,7 +21,7 @@ var dict = {
 		},
 		downButton: {en: "DOWNLOAD MY RESUME", fr: "T\xC9L\xC9CHARGER MON CV"},
 		jobDescr: {en: "", fr: "Développeuse en herbe"},
-		moocsTitle: {en: "ONLINE EDUCATION", fr: "FORMATION EN LIGNE"},
+		moocsTitle: {en: "ONLINE EDUCATION (MOOCs)", fr: "FORMATION EN LIGNE (MOOCs)"},
 		edTitle: {en: "EDUCATION", fr: "FORMATION"},
 		skillsTitle: {en: "SKILLS", fr: "COMP\xC9TENCES"},
 		programming: {en: "Programming", fr: "Programmation"},
@@ -35,8 +35,8 @@ var dict = {
 		expTitle: {en: "WORK AND ASSOCIATIVE EXPERIENCE", fr: "EXP\xC9RIENCE PROFESSIONNELLE ET ASSOCIATIVE"},
 		london: {en: "London (UK)", fr: "Londres (RU)"},
 		ireland: {en: "Ireland", fr: "Irlande"},
-		since: {en: "since", fr: "depuis"},
 		months: {
+			since: {en: "since", fr: "depuis"},
 			jan: {en: "January", fr: "janvier"},
 			feb: {en: "February", fr: "f\xE9vrier"},
 			march: {en: "March", fr: "mars"},
@@ -50,12 +50,18 @@ var dict = {
 			nov: {en: "November", fr: "novembre"},
 			dec: {en: "December", fr: "d\xE9cembre"},
 		},
-		titleAgile: {en: "Software Processes and Agile Practices, University of Alberta",
-					fr: "\"Software Processes and Agile Practices\", Universit\xE9 d'Alberta"},
+		titleAgile: {en: "Software Processes and Agile Practices",
+					fr: "Software Processes and Agile Practices"},
 		descrAgile: {en: "", fr: ""},
-		titleJava: {en: "", 
-					fr: "Initiation \xE0 la programmation \n Introduction &agrave la programmation orient&eacutee objet en Java, \xC9cole Polytechnique de Lausanne"},
+		titleJava: {en: "Initiation \xE0 la programmation et Introduction \xE0 la programmation orient\xE9e objet en Java", 
+					fr: "Initiation \xE0 la programmation et Introduction \xE0 la programmation orient\xE9e objet en Java"},
 		descrJava: {en: "", fr: ""},
+		titleAfpa: { en: "Conceptrice Développeuse Informatique (Degree-level professional diploma in Software Design and Development	)", 
+					fr: "Conceptrice Développeuse Informatique (Titre Professionnel de niveau II)"},
+		descrAfpa: { en: "During this professional training course, I will deepen my programming knowledge, and learn new software development skills: "
+		+ "Object-Oriented Programming in Java, databases, design aspect (Merise, UML, design patterns).",
+					fr: "Cette formation professionnelle me permet de renforcer mes acquis en programmation, et de développer de nouvelles compétences "
+					 + "en développement et en conception: approfondissement de la POO en Java, bases de données, aspect conception (UML, Merise, design patterns)."}, // A COMPLETER
 		descr42: { en: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. " +
 					"Throughout this course, I acquired the basics of computer programming " +
 					"(in C, PHP, HTLM, CSS, Javascript), as well as good coding practices " +
@@ -86,15 +92,20 @@ var dict = {
 		titleMed: {en: "PCEM 1 (1st year of medical studies)", fr: "Premier Cycle des \xC9tudes M\xE9dicales 1"},
 		titleBac: {en: "Scientific Baccalaur\xE9at, with Highest Honours", 
 					fr: "Baccalaur\xE9at Scientifique, sp\xE9cialit\xE9 Math\xE9matiques, mention Tr\xE8s Bien"},
+		titleCalaiswood: {fr: "Traductrice/ Relectrice (projet Use-It) et Web Designer bénévole", en: "Volunteer translator/ proofreader "
+							+ "(Use-It project) and Web Designer"},
+		descrCalaiswood: {fr: "Participation à la rédaction de la carte Use-It Calais en anglais (traduction / relecture)," 
+								+ " Création du site internet de l'association",
+							en: ""},
 		titleKiron: {en: "Volunteer - Computer Science Curriculum equivalence analysis", 
 					fr: "B\xE9n\xE9vole, analyse d'\xE9quivalences de formations en Informatique"},
-		descrKiron: {en: "Kiron France is an NGO that offers a hybrid education system aimed at helping refugees " +
+		descrKiron: {en: "Kiron France (now UniR) is an NGO that offers a hybrid education system aimed at helping refugees " +
 					"and asylum seekers access higher education. " +
 					"After a year of learning online through MOOCs, Kiron students " +
 					"are transfered to the second year of one of Kiron's partner Universities " +
 					"As a volunteer at Kiron France, my role was to match Kiron Computer Science modules " +
 					"with partner universities modules.", 
-					fr: "Kiron France est une association qui vise \xE0 faciliter l'acc\xE8s \xE0 l'\xE9ducation sup\xE9rieure aux " +
+					fr: "Kiron France (maintenant UniR) est une association qui vise \xE0 faciliter l'acc\xE8s \xE0 l'\xE9ducation sup\xE9rieure aux " +
 					"personnes r\xE9fugi\xE9es et aux demandeurs d'asile, \xE0 travers un syst\xE8me hybride de formation. " +
 					"L'\xE9tudiant r\xE9alise la premi\xE8re \xE9tape de son cursus en ligne via des MOOCs, " +
 					"et int\xE8gre ensuite l’une de nos universite\xE9s partenaires directement en Licence " +
@@ -112,7 +123,7 @@ var dict = {
 		descrSpeedb: {en: "", fr: ""},
 		titleStoneh: {en: "Bed & Breakfast employee", fr: "Employ\xE9e de Bed & Breakfast"},
 		descrStoneh: {en: "", fr: ""},
-		titleHoriz: {en: "Work placement coordinator for French students", fr: "Coordinatrice de stages pour des lyc\xE9ens fran\xC7ais"},
+		titleHoriz: {en: "Work placement coordinator for French students", fr: "Coordinatrice de stages pour des lyc\xE9ens fran\xe7ais"},
 		descrHoriz: {en: "", fr: ""},
 		hobbiesTitle: {en: "HOBBIES", fr: "CENTRES D'INT\xC9R\xCAT"},
 		hikingText: {en: "hiking", fr: "randonn\xE9e"},
@@ -130,6 +141,18 @@ function canAccessStorage() {
     return true;
 }
 
+function translate(lang) {
+	var el;
+	var text;
+
+	for (var ref in DICT) {
+		el = document.getElementById(ref);
+		changeText(el, DICT[ref][lang]);
+	}
+	translateTooltips(lang);
+	translateMonths(lang);
+}
+
 function changeText(element, text) {
 	if (element) {
 		var textNode = document.createTextNode(text);
@@ -140,31 +163,32 @@ function changeText(element, text) {
 	}
 }
 
-function translate(lang) {
-	var ref;
-	var el;
-	var text;
-
-	for (ref in dict) {
-		el = document.getElementById(ref);
-		changeText(el, dict[ref][lang]);
-	}
-	for (ref in dict.tooltips) {
-		el = document.getElementById(ref);
-		text = dict["tooltips"][ref][lang];
+function translateTooltips(lang) {
+	for (var ref in DICT.tooltips) {
+		var el = document.getElementById(ref);
+		text = DICT["tooltips"][ref][lang];
 		if (el) {
 			el.setAttribute("data-original-title", text);
 		}
 	}
-	for (ref in dict["months"]) {
+}
+
+function translateMonths(lang) {
+	for (var ref in DICT["months"]) {
 		var elements = document.getElementsByClassName(ref);
 		if (elements) {
-			text = dict.months[ref][lang];
+			text = DICT.months[ref][lang];
 			for (i = 0; i < elements.length; i++) {
 				changeText(elements[i], text);			
 			}
 		}
 	}
+}
+
+function setStyle(toSet, toUnset){
+	toUnset.style.border = "none";
+	toSet.style.border = THEME.borderStyle;
+	toSet.style.fontWeight = "bolder";
 }
 
 function setLang(lang) {
@@ -175,25 +199,19 @@ function setLang(lang) {
 	switch (lang) {
 		case "en":
 			translate("en");
-			fr.style.border = "none";
-			en.style.border = theme.borderStyle;
-			en.style.fontWeight = "bolder";
+			setStyle(en, fr);
 			download.setAttribute("href", PDF_RESUME.en);
 			$("#sm_down_button").attr("href", PDF_RESUME.en);
 			break ;
 		case "fr":
 			translate("fr");
-			en.style.border = "none";
-			fr.style.border = theme.borderStyle;
-			fr.style.fontWeight = "bolder";
+			setStyle(fr, en);
 			download.setAttribute("href", PDF_RESUME.fr);
 			$("#sm_down_button").attr("href", PDF_RESUME.fr);
 			break ;
 		default:
 			translate("fr");
-			en.style.border = "none";
-			fr.style.border = theme.borderStyle;
-			fr.style.fontWeight = "bolder";
+			setStyle(fr, en);
 			download.setAttribute("href", PDF_RESUME.fr);
 			$("#sm_down_button").attr("href", PDF_RESUME.fr);
 	}
@@ -212,12 +230,11 @@ function changeLang(lang) {
 }
 
 window.onload = function () {
-	if (canAccessStorage()) {
+
+	if (canAccessStorage())
 		setLang(window.localStorage.getItem("lang"));
-	}
-	else {
+	else
 		setLang(DEFAULT_LANG);
-	}
 	document.getElementById("en").addEventListener("click", function() {
 		changeLang("en");
 	});

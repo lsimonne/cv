@@ -194,6 +194,10 @@ li.skill {
 	text-align: justify;
 	text-justify: inter-word;
 }
+#calaiswood {
+	margin-left: -55px;
+	margin-top: -10px;
+}
 /*** CIRCLE CONTAINERS ***/
 .circle-container {
 	position: relative;
@@ -230,19 +234,14 @@ li.skill {
 .deg180 { transform: rotate(190deg) translate(7.5em) rotate(-190deg);}
 .deg270 { transform: rotate(280deg) translate(7.5em) rotate(-280deg);}
 
-#flags>.center  img {margin-top: -10px; vertical-align: top}
-#flags {margin-left: 30%;}
-#books img {margin-top: 0;}
-#books {height: 15em; width:15em;margin-top: 50px; margin-left: 150px}
-#books span {margin: -3.25em;height: auto;}
-#books>.center img {margin-top: 30px;}
 /********************************/
-.quote{
-	margin-top: 70px;
-	font-style: italic;
+
+#otherHobbies {
+	margin-left: 15%;
+	margin-top: 100px;
 }
+
 footer {
-	clear: both;
 	background-color: #e6e6e6;
 	text-align: center;
 	vertical-align: middle;
@@ -278,7 +277,7 @@ footer {
 	}
 }
 @media only screen and (max-width: 900px) {
-	.circle-container{
+	.circle-container, #otherHobbies{
 		display: none;
 	}
 	.glyphicon.glyphicon-star {
@@ -315,10 +314,7 @@ footer {
 	h1 {
 		font-size: 2em;
 	}
-	.container-fluid {
+	/* .container-fluid {
 		padding-left: 0px;
-	}
-	/*#sports, #flags, #books {
-		display: none;
-	}*/
+	} */
 }
