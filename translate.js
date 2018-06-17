@@ -66,9 +66,13 @@ const DICT = {
 	},
 	descrAfpa: {
 		en: "During this professional training course, I will deepen my programming knowledge, and learn new software development skills: "
-			+ "Object-Oriented Programming in Java, databases, design aspect (Merise, UML, design patterns).",
+			+ "Object-Oriented Programming in Java, databases, design aspect (Merise, UML, design patterns)."
+			+ " The programme includes: Java/ JavaFX (Eclipse, IntelliJ), JSF, Hibernate, Transact SQL (SQL Server Management Studio)," 
+			+ "Talend Open Studio for Data Integration, PHP (PHP Storm), mySQL/ PostgreSQL, Javascript, jQuery, HTML, CSS, Android.",
 		fr: "Cette formation professionnelle me permet de renforcer mes acquis en programmation, et de développer de nouvelles compétences "
 			+ "en développement et en conception: approfondissement de la POO en Java, bases de données, aspect conception (UML, Merise, design patterns)."
+			+ " Les technologies et outils au programme: Java/ JavaFX (Eclipse, IntelliJ), JSF, Hibernate, Transact SQL (SQL Server Management Studio)," 
+			+ "Talend Open Studio for Data Integration, PHP (PHP Storm), mySQL/ PostgreSQL, Javascript, jQuery, HTML, CSS, Android."
 	}, // A COMPLETER
 	descr42: {
 		en: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. " +
@@ -115,9 +119,10 @@ const DICT = {
 			+ "(Use-It project) and Web Designer"
 	},
 	descrCalaiswood: {
-		fr: "Participation à la rédaction de la carte Use-It Calais en anglais (traduction / relecture),"
-			+ " Création du site internet de l'association",
-		en: ""
+		fr: "Participation à la rédaction de la carte Use-It Calais en anglais (traduction / relecture), "
+			+ " création du site internet de l'association (en Hugo, déployé sur Netlify).",
+		en: "Writing and proof reading for the Use-It map project (in English), design and production "
+			+ "of a website (in Hugo, deployed on Netlify)."
 	},
 	titleKiron: {
 		en: "Volunteer - Computer Science Curriculum equivalence analysis",
@@ -133,9 +138,9 @@ const DICT = {
 		fr: "Kiron France (maintenant UniR) est une association qui vise \xE0 faciliter l'acc\xE8s \xE0 l'\xE9ducation sup\xE9rieure aux " +
 			"personnes r\xE9fugi\xE9es et aux demandeurs d'asile, \xE0 travers un syst\xE8me hybride de formation. " +
 			"L'\xE9tudiant r\xE9alise la premi\xE8re \xE9tape de son cursus en ligne via des MOOCs, " +
-			"et int\xE8gre ensuite l’une de nos universite\xE9s partenaires directement en Licence " +
+			"et int\xE8gre ensuite l’une des universite\xE9s partenaires directement en Licence " +
 			"gr\xE2ce \xE0 l’accre\xE9ditation de leur formation. " +
-			"Mon r\xF4le au sein de Kiron France est de trouver des \xE9quivalences de " +
+			"Mon r\xF4le au sein de Kiron France était de trouver des \xE9quivalences de " +
 			"modules entre les formations de nos universit\xE9s partenaires et le cursus Informatique Kiron."
 	},
 	titleCes: { en: "Receptionist", fr: "R\xE9ceptionniste" },
