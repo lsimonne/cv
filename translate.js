@@ -73,7 +73,7 @@ const DICT = {
 			+ "en développement et en conception: approfondissement de la POO en Java, bases de données, aspect conception (UML, Merise, design patterns)."
 			+ " Les technologies et outils au programme: Java/ JavaFX (Eclipse, IntelliJ), JSF, Hibernate, Transact SQL (SQL Server Management Studio)," 
 			+ "Talend Open Studio for Data Integration, PHP (PHP Storm), mySQL/ PostgreSQL, Javascript, jQuery, HTML, CSS, Android."
-	}, // A COMPLETER
+	},
 	descr42: {
 		en: "42 is a coding school based on peer-learning: no classes, no teachers, a totally project-oriented programme. " +
 			"Throughout this course, I acquired the basics of computer programming " +
@@ -221,6 +221,7 @@ function translate(lang) {
 	}
 	translateTooltips(lang);
 	translateMonths(lang);
+	document.documentElement.setAttribute("lang", lang);
 }
 
 function setStyle(toSet, toUnset) {
